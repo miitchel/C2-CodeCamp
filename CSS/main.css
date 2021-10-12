@@ -8,6 +8,27 @@
     background-color: #4682b4;
 }
 
+.header-center {
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-center h1 {
+    font-family: "Open Sans", Arial, Sans-serif;
+    font-size: 50px;
+}
+
+.header-center a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Open Sans', Arial, Sans-serif;
+    padding: 0 5px;
+}
+
 .center {
     width: 70%;
     height: 100%;
@@ -17,14 +38,7 @@
     justify-content: space-between;
 }
 
-.center h1 {
-    font-family: "Open Sans", Arial, Sans-serif;
-    font-size: 50px;
-}
-
-.center a {
-    text-decoration: none;
-    color: black;
+.center {
     font-family: 'Open Sans', Arial, Sans-serif;
-    padding: 0 5px;
+    font-size: 30px;
 }
