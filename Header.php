@@ -6,7 +6,7 @@
         <nav>
             <a href="<?php echo $base_url; ?>/boeken/index.php">Boeken</a>
             <a href="">Songteksten</a>
-            <a href="">Films</a>
+            <a href="">Filmpersonages</a>
             <a href="">Gereedschap</a>
         </nav>
     </div>
