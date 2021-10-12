@@ -56,6 +56,7 @@ footer {
 
 .films p {
     font-family: 'Open Sans', Arial, Sans-serif;
+    margin-bottom: 5px;
 }
 
 .films ul {
@@ -63,6 +64,11 @@ footer {
 }
 
 .films a {
+    font-family: 'Open Sans', Arial, Sans-serif;
+    text-decoration: none;
+}
+
+.films ul a {
     font-family: 'Open Sans', Arial, Sans-serif;
     text-decoration: none;
     color: black;
