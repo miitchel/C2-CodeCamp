@@ -84,3 +84,15 @@ footer {
 .timotydalton{
     background-color:#317f43;
 }
+
+.informationpages a{
+    text-decoration: none;
+    color: red;
+    padding: 0 0 10px;
+    font-family: 'Open Sans', Arial, Sans-serif;
+}
+
+.informationpages{
+    display: flex;
+    flex-direction: column;
+}
