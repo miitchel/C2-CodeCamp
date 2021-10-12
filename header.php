@@ -8,7 +8,6 @@
             <a href="">Songteksten</a>
             <a href="<?php echo $base_url; ?>/filmpersonages/index.php">Filmpersonages</a>
             <a href="<?php echo $base_url; ?>/films/index.php">Films</a>
-            <a href="">Filmpersonages</a>
             <a href="">Gereedschap</a>
         </nav>
     </div>
