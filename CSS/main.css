@@ -49,7 +49,24 @@ footer {
     font-family: 'Open Sans', Arial, Sans-serif;
 }
 
+.films h1 {
+    font-family: 'Open Sans', Arial, Sans-serif;
+    font-size: 50px;
+}
 
+.films p {
+    font-family: 'Open Sans', Arial, Sans-serif;
+}
+
+.films ul {
+    margin: 30px 30px;
+}
+
+.films a {
+    font-family: 'Open Sans', Arial, Sans-serif;
+    text-decoration: none;
+    color: black;
+}
 .darthvader{
     background-color: #E0AB03;
 }
