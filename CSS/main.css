@@ -28,3 +28,9 @@
     font-family: 'Open Sans', Arial, Sans-serif;
     padding: 0 5px;
 }
+
+footer {
+    height: 150px;
+    color: #fff;
+    background-color: #343a40;
+}
