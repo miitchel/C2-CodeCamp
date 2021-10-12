@@ -1,7 +1,14 @@
+<head>
+    <?php require_once('head.php'); ?>
+</head>
+
 <div class="header-wrapper">
     <div class="center">
-        <h1>CodeCamp</h1>
+        <a href="index.php">
+            <h1>CodeCamp</h1>
+        </a>
         <nav>
+            <a href="">Home</a>
             <a href="">Songteksten</a>
             <a href="">Films</a>
             <a href="">Gereedschap</a>
