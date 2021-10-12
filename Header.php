@@ -9,6 +9,7 @@
         </a>
         <nav>
             <a href="">Home</a>
+            <a href="">Boeken</a>
             <a href="">Songteksten</a>
             <a href="">Films</a>
             <a href="">Gereedschap</a>
