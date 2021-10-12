@@ -3,12 +3,17 @@
     padding: 0;
 }
 
+.wrapper {
+    margin: 0 auto;
+    width: 60%;
+}
+
 .header-wrapper {
-    height: 150px;
+    height: 100px;
     background-color: #4682b4;
 }
 
-.center {
+.header-center {
     width: 70%;
     height: 100%;
     margin: 0 auto;
@@ -17,14 +22,34 @@
     justify-content: space-between;
 }
 
-.center h1 {
+.header-center h1 {
     font-family: "Open Sans", Arial, Sans-serif;
     font-size: 50px;
 }
 
-.center a {
+.header-center a {
     text-decoration: none;
     color: black;
     font-family: 'Open Sans', Arial, Sans-serif;
     padding: 0 5px;
+}
+
+footer {
+    height: 150px;
+    color: #fff;
+    background-color: #343a40;
+}
+.center {
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.center  h1{
+    font-family: 'Open Sans', Arial, Sans-serif;
+    font-size: 50px;
+}
+
+.center p{
+    font-family: 'Open Sans', Arial, Sans-serif;
 }
