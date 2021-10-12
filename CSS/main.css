@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+.wrapper {
+    margin: 0 auto;
+    width: 60%;
+}
+
 .header-wrapper {
     height: 100px;
     background-color: #4682b4;
