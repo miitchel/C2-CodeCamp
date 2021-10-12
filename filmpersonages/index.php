@@ -9,10 +9,10 @@
 </header>
 <body>
     <div class="informationpages">
-        <a href="<?php echo $base_url; ?>/lukeskywalker.php">Luke Skywalker</a>
-        <a href="<?php echo $base_url; ?>/darthvader.php">Darth Vader</a>
-        <a href="<?php echo $base_url; ?>/timotydalton.php">Timoty Dalton</a>
-        <a href="<?php echo $base_url; ?>/jamesbond.php">James Bond</a>
+        <a href="<?php echo $base_url; ?>/filmpersonages/lukeskywalker.php">Luke Skywalker</a>
+        <a href="<?php echo $base_url; ?>/filmpersonages/darthvader.php">Darth Vader</a>
+        <a href="<?php echo $base_url; ?>/filmpersonages/timotydalton.php">Timoty Dalton</a>
+        <a href="<?php echo $base_url; ?>/filmpersonages/jamesbond.php">James Bond</a>
     </div>
 </body>
 </html>
