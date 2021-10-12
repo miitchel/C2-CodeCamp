@@ -1,7 +1,3 @@
-<head>
-    <?php require_once('head.php'); ?>
-</head>
-
 <div class="header-wrapper">
     <div class="center">
         <a href="index.php">
