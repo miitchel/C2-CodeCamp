@@ -13,6 +13,7 @@
         <a href="<?php echo $base_url; ?>/filmpersonages/darthvader.php">Darth Vader</a>
         <a href="<?php echo $base_url; ?>/filmpersonages/timotydalton.php">Timoty Dalton</a>
         <a href="<?php echo $base_url; ?>/filmpersonages/jamesbond.php">James Bond</a>
+        <a href="<?php echo $base_url; ?>/filmpersonages/georgeclooney.php">George Clooney</a>
     </div>
 </body>
 </html>
