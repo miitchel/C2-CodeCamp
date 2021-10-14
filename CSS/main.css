@@ -63,6 +63,7 @@ footer {
 
 .films p {
     font-family: 'Open Sans', Arial, Sans-serif;
+    margin-bottom: 5px;
 }
 
 .films ul {
@@ -70,6 +71,11 @@ footer {
 }
 
 .films a {
+    font-family: 'Open Sans', Arial, Sans-serif;
+    text-decoration: none;
+}
+
+.films ul a {
     font-family: 'Open Sans', Arial, Sans-serif;
     text-decoration: none;
     color: black;
@@ -84,4 +90,16 @@ footer {
 
 .timotydalton{
     background-color:#317f43;
+}
+
+.informationpages a{
+    text-decoration: none;
+    color: #cc0000;
+    padding: 0 0 10px;
+    font-family: 'Open Sans', Arial, Sans-serif;
+}
+
+.informationpages{
+    display: flex;
+    flex-direction: column;
 }
