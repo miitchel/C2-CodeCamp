@@ -7,6 +7,14 @@ body{
     font-family: 'roboto', sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 .wrapper {
     margin: 0 auto;
     width: 60%;
@@ -61,15 +69,6 @@ footer {
 .films ul {
     margin: 30px 30px;
 }
-
-.films a {
-    text-decoration: none;
-}
-
-.films ul a {
-    text-decoration: none;
-    color: black;
-}
 .darthvader{
     background-color: #E0AB03;
 }
@@ -100,14 +99,6 @@ footer {
 .gereedschap-list {
     display: flex;
     flex-direction: column;
-}
-
-.gereedschap-list a {
-    text-decoration: none;
-}
-
-.gereedschap-list a:hover {
-    text-decoration:underline;
 }
 
 .zagen {
