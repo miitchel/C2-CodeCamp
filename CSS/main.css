@@ -97,14 +97,14 @@ footer {
     background-color:#317f43;
 }
 
-.informationpages a{
+.items a{
     text-decoration: none;
     color: #cc0000;
     padding: 0 0 10px;
     font-family: 'Open Sans', Arial, Sans-serif;
 }
 
-.informationpages{
+.items{
     display: flex;
     flex-direction: column;
 }
