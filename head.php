@@ -1,4 +1,7 @@
-<?php require_once 'backend/config.php' ?>
+<?php
+require_once 'backend/config.php';
+require_once 'backend/conn.php';
+?>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">

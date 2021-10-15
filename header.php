@@ -5,7 +5,7 @@
         </a>
         <nav>
             <a href="<?php echo $base_url; ?>/boeken/index.php">Boeken</a>
-            <a href="">Songteksten</a>
+            <a href="<?php echo $base_url; ?>/songteksten/index.php">Songteksten</a>
             <a href="<?php echo $base_url; ?>/films/index.php">Films</a>
             <a href="">Gereedschap</a>
         </nav>
