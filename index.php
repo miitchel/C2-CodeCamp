@@ -13,7 +13,9 @@
   
   <main>
     <div class="wrapper">
-      
+      <div class="clock" id="clock">
+        00:00
+      </div>
     </div>
   </main>
   
