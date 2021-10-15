@@ -22,6 +22,14 @@
 
   <main>
     <div class="wrapper">
+      <div class="items">
+          <ul>
+              <?php foreach($personages as $personage): ?>
+              <li><a href="filmpersonage.php?id=<?php echo $personage['id']; ?>"><?php echo $personage['naam']; ?></a></li>
+              
+              <?php endforeach; ?>
+          </ul>
+      </div>
     </div>
   </main>
 </body>
