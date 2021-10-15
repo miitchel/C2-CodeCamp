@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+body{
+    font-family: 'roboto', sans-serif;
+}
+
 .wrapper {
     margin: 0 auto;
     width: 60%;
@@ -28,14 +32,12 @@
 }
 
 .header-center h1 {
-    font-family: "Open Sans", Arial, Sans-serif;
     font-size: 50px;
 }
 
 .header-center a {
     text-decoration: none;
     color: black;
-    font-family: 'Open Sans', Arial, Sans-serif;
     padding: 0 5px;
 }
 
@@ -53,21 +55,14 @@ footer {
 }
 
 .boeken  h1{
-    font-family: 'Open Sans', Arial, Sans-serif;
     font-size: 50px;
 }
 
-.boeken p{
-    font-family: 'Open Sans', Arial, Sans-serif;
-}
-
 .films h1 {
-    font-family: 'Open Sans', Arial, Sans-serif;
     font-size: 50px;
 }
 
 .films p {
-    font-family: 'Open Sans', Arial, Sans-serif;
     margin-bottom: 5px;
 }
 
@@ -76,12 +71,10 @@ footer {
 }
 
 .films a {
-    font-family: 'Open Sans', Arial, Sans-serif;
     text-decoration: none;
 }
 
 .films ul a {
-    font-family: 'Open Sans', Arial, Sans-serif;
     text-decoration: none;
     color: black;
 }
@@ -101,10 +94,32 @@ footer {
     text-decoration: none;
     color: #cc0000;
     padding: 0 0 10px;
-    font-family: 'Open Sans', Arial, Sans-serif;
 }
 
 .informationpages{
     display: flex;
     flex-direction: column;
+}
+
+.gereedschap p {
+    margin: 10px 0;
+}
+
+.gereedschap-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.gereedschap-list a {
+    text-decoration: none;
+}
+
+.gereedschap-list a:hover {
+    text-decoration:underline;
+}
+
+.zagen {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
 }
