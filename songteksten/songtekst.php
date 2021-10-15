@@ -6,14 +6,7 @@
   <title>CodeCamp</title>
 </head>
 
-<body>
-  <header>
-    <?php require_once '../header.php' ?>
-  </header>
-  
-  <main>
-    <div class="wrapper">
-      <?php
+<?php
       $id = $_GET['id'];
       $query = "SELECT * FROM songteksten WHERE id = :id";
       $statement = $conn->prepare($query);
@@ -21,17 +14,25 @@
       $songtekst = $statement->fetch(PDO::FETCH_ASSOC);
       ?>
 
+<body style="background: <?php echo $songtekst['kleur'] ?>">
+  <header>
+    <?php require_once '../header.php' ?>
+  </header>
+  
+  <main>
+    <div class="wrapper">
 
       <h1><?php echo $songtekst['artiest'] ?> - <?php echo $songtekst['titel'] ?></h1>
       <pre><?php 
           if($songtekst['songtekst'] == "[Instrumental]"){
-            echo "Instrumentaal nummer";
+            echo "Dit is een instrumentaal nummer";
           }
           else{
             echo $songtekst['songtekst'];
           }
         ?>
       </pre>
+
     </div>
   </main>
   

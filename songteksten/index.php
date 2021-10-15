@@ -21,10 +21,10 @@
       ?>
 
 
-
-      <div class="lyricsMenu">
+      <h1>Songteksen</h1>
+      <div class="songteksten-menu">
         <?php foreach($songteksten as $songtekst): ?>
-        <a href="songtekst.php?id=<?php echo $songtekst['id']; ?>"><?php echo $songtekst['titel'] ?></a>
+        <a href="songtekst.php?id=<?php echo $songtekst['id']; ?>"><?php echo $songtekst['artiest'] ?> - <?php echo $songtekst['titel'] ?></a>
         <?php endforeach ?>
       </div>
     </div>
