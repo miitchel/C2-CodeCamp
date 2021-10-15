@@ -9,10 +9,27 @@ body{
 
 a {
     text-decoration: none;
+    color: blue;
 }
 
 a:hover {
     text-decoration: underline;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+p, pre {
+    font-size: 15px;
 }
 
 .wrapper {
@@ -69,6 +86,7 @@ footer {
 .films ul {
     margin: 30px 30px;
 }
+
 .darthvader{
     background-color: #E0AB03;
 }
