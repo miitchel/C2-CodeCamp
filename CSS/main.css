@@ -8,6 +8,11 @@
     width: 60%;
 }
 
+.wrapper a{
+    text-decoration: none;
+    color:#cc0000;
+}
+
 .header-wrapper {
     height: 100px;
     background-color: #4682b4;

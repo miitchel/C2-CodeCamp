@@ -11,6 +11,8 @@
     
 <main>
     <div class="wrapper">
+        <a href="<?php echo $base_url; ?>/filmpersonages/timotydalton.php">Vorige/</a>
+        <a href="<?php echo $base_url; ?>/filmpersonages/georgeclooney.php">Volgende</a>
         <h1>Lijst van James Bond films met Roger Moore</h1>
         <ul>
             <li>Live and Let Die (1973)</li>
