@@ -8,6 +8,7 @@
             <a href="<?php echo $base_url; ?>/songteksten/index.php">Songteksten</a>
             <a href="<?php echo $base_url; ?>/films/index.php">Films</a>
             <a href="<?php echo $base_url; ?>/gereedschap/index.php">Gereedschap</a>
+            <a href="<?php echo $base_url; ?>/dranken/index.php">Dranken</a>
         </nav>
     </div>
 </div>

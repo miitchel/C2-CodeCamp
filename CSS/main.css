@@ -7,12 +7,41 @@ body{
     font-family: 'roboto', sans-serif;
 }
 
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+p, pre {
+    font-size: 15px;
+}
+
 .wrapper {
     margin: 0 auto;
     width: 60%;
 }
 
-.wrapper a{
+h1 {
+    margin: 5px 0
+}
+
+.buttons-previous-next{
     text-decoration: none;
     color:#cc0000;
 }
@@ -66,14 +95,7 @@ footer {
     height: 150px;
     color: #fff;
     background-color: #343a40;
-}
-
-.boeken  h1{
-    font-size: 50px;
-}
-
-.films h1 {
-    font-size: 50px;
+    margin-top: 30px;
 }
 
 .films p {
@@ -81,17 +103,9 @@ footer {
 }
 
 .films ul {
-    margin: 30px 30px;
+    margin: 30px 0 0 30px
 }
 
-.films a {
-    text-decoration: none;
-}
-
-.films ul a {
-    text-decoration: none;
-    color: black;
-}
 .darthvader{
     background-color: #E0AB03;
 }
@@ -124,16 +138,29 @@ footer {
     flex-direction: column;
 }
 
-.gereedschap-list a {
-    text-decoration: none;
-}
-
-.gereedschap-list a:hover {
-    text-decoration:underline;
-}
-
 .zagen {
     display: flex;
     flex-direction: column;
     margin-top: 20px;
 }
+
+<<<<<<< Updated upstream
+.frisdrank{
+    background-color: #b97d4b;
+}
+
+.warmedranken{
+    background-color: #dc0219;
+}
+=======
+
+.songteksten-menu {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+
+pre {
+    font-family:'roboto'
+}
+>>>>>>> Stashed changes
