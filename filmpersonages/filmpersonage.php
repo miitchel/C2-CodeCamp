@@ -8,6 +8,11 @@
   $statement = $conn->prepare($query);
   $statement->execute();
   $personage = $statement->fetch(PDO::FETCH_ASSOC);
+  
+  $query = "SELECT * FROM filmpersonages";
+  $statement = $conn->prepare($query);
+  $statement->execute([]);
+  $personages = $statement->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
 <head>
@@ -22,7 +27,18 @@
 
   <main>
     <div class="wrapper">
-      <h1><?php echo $personage['naam']; ?></h1>
+      <h1><?php echo $personage['naam']; ?></h1> 
+      
+      <div class="buttons-previous-next">
+        <?php if ($_GET['id'] > 1): ?>
+          <a href="filmpersonage.php?id=<?php echo $_GET['id'] - 1; ?>">< Vorige</a>
+        <?php endif; ?>
+        
+        <?php if ($_GET['id'] < count($personages)): ?>
+          <a href="filmpersonage.php?id=<?php echo $_GET['id'] + 1; ?>">Volgende ></a>
+        <?php endif; ?>
+      </div>     
+      
       <div class="content-body">
         <pre><?php echo $personage['beschrijving']; ?>
         </pre>
