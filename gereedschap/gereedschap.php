@@ -13,6 +13,11 @@
     ":id" => $_GET['id'],
   ]);
   $gereedschap = $statement->fetch(PDO::FETCH_ASSOC);
+  
+  $query = "SELECT * FROM gereedschap";
+  $statement = $conn->prepare($query);
+  $statement->execute([]);
+  $gereedschappen = $statement->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
 <body>
@@ -22,7 +27,27 @@
 
   <main>
     <div class="wrapper">
-
+      <h1><?php echo $gereedschap['naam']; ?></h1>
+      
+      <div class="buttons-previous-next">
+        <?php if ($_GET['id'] > 1): ?>
+          <a href="gereedschap.php?id=<?php echo $_GET['id'] - 1; ?>">< Vorige</a>
+        <?php endif; ?>
+        
+        <?php if ($_GET['id'] < count($gereedschappen)): ?>
+          <a href="gereedschap.php?id=<?php echo $_GET['id'] + 1; ?>">Volgende ></a>
+        <?php endif; ?>
+      </div>
+      
+      <div class="content-body">
+        <pre><?php echo $gereedschap['beschrijving'];?>
+        </pre>
+        
+        <div>
+          <img class="item-img" src="../img/gereedschap/<?php echo $gereedschap['afbeelding'] ?>" alt="Afbeelding van <?php echo $gereedschap['naam']; ?>">
+        </div>
+      </div>
+      
     </div>
   </main>
 

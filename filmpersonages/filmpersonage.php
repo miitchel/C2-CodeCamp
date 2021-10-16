@@ -37,7 +37,7 @@
         <?php if ($_GET['id'] < count($personages)): ?>
           <a href="filmpersonage.php?id=<?php echo $_GET['id'] + 1; ?>">Volgende ></a>
         <?php endif; ?>
-      </div>     
+      </div>
       
       <div class="content-body">
         <pre><?php echo $personage['beschrijving']; ?>
