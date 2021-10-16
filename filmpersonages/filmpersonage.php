@@ -15,7 +15,7 @@
   <title><?php $personage['naam']; ?></title>
 </head>
 
-<body>
+<body style="background-color: <?php echo $personage['kleur']?>">
   <header>
     <?php require_once '../header.php' ?>
   </header>
@@ -23,8 +23,14 @@
   <main>
     <div class="wrapper">
       <h1><?php echo $personage['naam']; ?></h1>
-      <pre><?php echo $personage['beschrijving']; ?>
-      </pre>
+      <div class="content-body">
+        <pre><?php echo $personage['beschrijving']; ?>
+        </pre>
+
+        <div>
+          <img class="item-img" src="../img/filmpersonages/<?php echo $personage['afbeelding']; ?>" alt="Afbeelding voor <?php echo $personage['naam']; ?>">
+        </div>
+      </div>
     </div>
   </main>
 
