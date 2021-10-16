@@ -31,11 +31,11 @@
       
       <div class="buttons-previous-next">
         <?php if ($_GET['id'] > 1): ?>
-          <a href="songtekst.php?id=<?php echo $songtekst['id'] - 1; ?>">< Vorige</a>
+          <a href="songtekst.php?id=<?php echo $_GET['id'] - 1; ?>">< Vorige</a>
         <?php endif; ?>
         
         <?php if ($_GET['id'] < count($songteksten)): ?>
-          <a href="songtekst.php?id=<?php echo $songtekst['id'] + 1; ?>">Volgende ></a>
+          <a href="songtekst.php?id=<?php echo $_GET['id'] + 1; ?>">Volgende ></a>
         <?php endif; ?>
       </div>
       
