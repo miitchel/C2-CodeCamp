@@ -48,6 +48,20 @@ body{
     font-size: 1.7em;
 }
 
+.content-body {
+    display: flex;
+}
+
+.content-body > * {
+    width: 50%;
+    overflow-x: auto;
+    white-space: pre-wrap;
+}
+
+.item-img {
+    width: 80%;
+}
+
 footer {
     height: 150px;
     color: #fff;
