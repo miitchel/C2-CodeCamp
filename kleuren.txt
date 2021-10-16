@@ -3,3 +3,4 @@ Code voor groen: #317f43
 Code voor blauw: #4682b4
 Code voor oranje (bruin) # b97d4b
 Code voor paars: #dc0219
+Code voor geel: #E0AB03
