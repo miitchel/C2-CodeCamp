@@ -23,7 +23,7 @@
                 <div class="gereedschap-list">
                     <h2>Gereedschap</h2>
                     <a href="gereedschap.php?id=2">Hamers</a>
-                    <a href="template.php?id=schroevendraaiers">Schroevendraaiers</a>
+                    <a href="gereedschap.php?id=5">Schroevendraaiers</a>
                     <div class="zagen">
                         <h3>Zagen</h3>
                         <a href="gereedschap.php?id=4">Cirkelzagen</a>
