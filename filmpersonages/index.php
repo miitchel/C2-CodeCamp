@@ -22,6 +22,7 @@
 
   <main>
     <div class="wrapper">
+      <h1>Filmpersonages</h1>
       <div class="items">
           <ul>
               <?php foreach($personages as $personage): ?>
