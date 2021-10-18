@@ -22,12 +22,12 @@
 
                 <div class="gereedschap-list">
                     <h2>Gereedschap</h2>
-                    <a href="template.php?id=hamers">Hamers</a>
-                    <a href="template.php?id=schroevendraaiers">Schroevendraaiers</a>
+                    <a href="gereedschap.php?id=2">Hamers</a>
+                    <a href="gereedschap.php?id=5">Schroevendraaiers</a>
                     <div class="zagen">
                         <h3>Zagen</h3>
-                        <a href="template.php?id=cirkelzagen">Cirkelzagen</a>
-                        <a href="template.php?id=kettingzagen">Kettingzagen</a>
+                        <a href="gereedschap.php?id=4">Cirkelzagen</a>
+                        <a href="gereedschap.php?id=3">Kettingzagen</a>
                         <a href="template.php?id=handzagen">Handzagen</a>
                     </div>
                 </div>

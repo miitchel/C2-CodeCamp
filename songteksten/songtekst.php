@@ -12,6 +12,11 @@
       $statement = $conn->prepare($query);
       $statement->execute([":id" => $id]);
       $songtekst = $statement->fetch(PDO::FETCH_ASSOC);
+      
+      $query = "SELECT * FROM songteksten";
+      $statement = $conn->prepare($query);
+      $statement->execute([]);
+      $songteksten = $statement->fetchAll(PDO::FETCH_ASSOC);
       ?>
 
 <body style="background: <?php echo $songtekst['kleur'] ?>">
@@ -23,6 +28,17 @@
     <div class="wrapper">
 
       <h1><?php echo $songtekst['artiest'] ?> - <?php echo $songtekst['titel'] ?></h1>
+      
+      <div class="buttons-previous-next">
+        <?php if ($_GET['id'] > 1): ?>
+          <a href="songtekst.php?id=<?php echo $_GET['id'] - 1; ?>">< Vorige</a>
+        <?php endif; ?>
+        
+        <?php if ($_GET['id'] < count($songteksten)): ?>
+          <a href="songtekst.php?id=<?php echo $_GET['id'] + 1; ?>">Volgende ></a>
+        <?php endif; ?>
+      </div>
+      
       <pre><?php 
           if($songtekst['songtekst'] == "[Instrumental]"){
             echo "Dit is een instrumentaal nummer";

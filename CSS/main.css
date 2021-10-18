@@ -70,12 +70,41 @@ h1 {
     padding: 0 5px;
 }
 
+.footer-wrapper {
+    height: 150px;
+    color: #fff;
+    background-color: #343a40;
+    margin-top: 30px;
+}
+
+.footer-center{
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-center h1{
+    font-size: 30px;
+}
+
+.footer-center a{
+    color: white;
+}
+
+.footer-subwrapper{
+    display: flex;
+    flex-direction: column;
+}
+
 .clock {
     user-select: none;
     width: fit-content;
     margin: 0 auto;
     font-size: 1.7em;
 }
+
 
 footer {
     height: 150px;
@@ -92,16 +121,27 @@ footer {
     margin: 30px 0 0 30px
 }
 
-.darthvader{
-    background-color: #E0AB03;
+.content-body {
+    display: flex;
 }
 
-.lukeskywalker{
-    background-color:#317f43;
+.content-body > * {
+    width: 50%;
+    overflow-x: auto;
+    white-space: pre-wrap;
+
 }
 
-.timotydalton{
-    background-color:#317f43;
+.item-img {
+    width: 80%;
+}
+
+.films p {
+    margin-bottom: 5px;
+}
+
+.films ul {
+    margin: 30px 0 0 30px
 }
 
 .items a{
@@ -130,7 +170,6 @@ footer {
     margin-top: 20px;
 }
 
-<<<<<<< Updated upstream
 .frisdrank{
     background-color: #b97d4b;
 }
@@ -138,7 +177,6 @@ footer {
 .warmedranken{
     background-color: #dc0219;
 }
-=======
 
 .songteksten-menu {
     display: flex;
@@ -149,4 +187,4 @@ footer {
 pre {
     font-family:'roboto'
 }
->>>>>>> Stashed changes
+

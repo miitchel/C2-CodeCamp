@@ -22,16 +22,23 @@
 
   <main>
     <div class="wrapper">
+      <h1>Filmpersonages</h1>
       <div class="items">
-          <ul>
-              <?php foreach($personages as $personage): ?>
-              <li><a href="filmpersonage.php?id=<?php echo $personage['id']; ?>"><?php echo $personage['naam']; ?></a></li>
-              
-              <?php endforeach; ?>
-          </ul>
+        <ul>
+          <?php foreach($personages as $personage): ?>
+          <li>
+            <a href="filmpersonage.php?id=<?php echo $personage['id']; ?>"><?php echo $personage['naam']; ?></a>
+          </li>
+          <?php endforeach; ?>
+        </ul>
       </div>
     </div>
   </main>
+  
+  <footer>
+    <?php require_once '../footer.php'; ?>
+  </footer>
+  
 </body>
 
 </html>
