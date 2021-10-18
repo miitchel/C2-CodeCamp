@@ -3,7 +3,7 @@
 
 <head>
   <?php require_once '../head.php'; ?>
-  <title>Informatie pagina over filmpersonages</title>
+  <title>CodeCamp - Filmpersonages</title>
 </head>
 
 <?php
