@@ -6,6 +6,20 @@
     <title>CodeCamp - Gereedschap</title>
 </head>
 
+<?php
+    require_once '../backend/conn.php';
+    $query = 'SELECT * FROM gereedschap WHERE zaag = 0';
+    $statement = $conn->prepare($query);
+    $statement->execute();
+    $gereedschappen = $statement->fetchAll(PDO::FETCH_ASSOC);
+    
+    require_once '../backend/conn.php';
+    $query = 'SELECT * FROM gereedschap WHERE zaag = 1';
+    $statement = $conn->prepare($query);
+    $statement->execute();
+    $zagen = $statement->fetchAll(PDO::FETCH_ASSOC);
+?>
+
 <body>
     <header>
         <?php require_once '../header.php' ?>
@@ -22,13 +36,24 @@
 
                 <div class="items">
                     <h2>Gereedschap</h2>
-                    <a href="gereedschap.php?id=2">Hamers</a>
-                    <a href="gereedschap.php?id=5">Schroevendraaiers</a>
+                    <ul>
+                        <?php foreach($gereedschappen as $gereedschap): ?>
+                            
+                            <li>
+                                <a href="gereedschap.php?id=<?php echo $gereedschap['id']; ?>"><?php echo $gereedschap['naam']; ?></a>
+                            </li>
+                        <?php endforeach; ?>
+                    </ul>
+                                
                     <div class="zagen">
                         <h3>Zagen</h3>
-                        <a href="gereedschap.php?id=4">Cirkelzagen</a>
-                        <a href="gereedschap.php?id=3">Kettingzagen</a>
-                        <a href="template.php?id=handzagen">Handzagen</a>
+                        <ul>
+                            <?php foreach($zagen as $zaag): ?>
+                                <li>
+                                    <a href="gereedschap.php?id=<?php echo $zaag['id']; ?>"><?php echo $zaag['naam']; ?></a>
+                                </li>
+                            <?php endforeach; ?>
+                        </ul>
                     </div>
                 </div>
             </div>
