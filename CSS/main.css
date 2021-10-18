@@ -1,3 +1,4 @@
+/* Main Componenten */
 * {
     margin: 0;
     padding: 0;
@@ -17,6 +18,7 @@ a:hover {
 }
 
 h1 {
+    margin: 5px 0;
     font-size: 50px;
 }
 
@@ -32,19 +34,7 @@ p, pre {
     font-size: 15px;
 }
 
-.wrapper {
-    margin: 0 auto;
-    width: 60%;
-}
-
-h1 {
-    margin: 5px 0
-}
-
-.buttons-previous-next{
-    text-decoration: none;
-}
-
+/* Header */
 .header-wrapper {
     height: 100px;
     background-color: #4682b4;
@@ -67,6 +57,14 @@ h1 {
     text-decoration: none;
     color: black;
     padding: 0 5px;
+}
+
+/* Footer */
+footer {
+    height: 150px;
+    color: #fff;
+    background-color: #343a40;
+    margin-top: 30px;
 }
 
 .footer-wrapper {
@@ -99,22 +97,36 @@ h1 {
     height: fit-content;
 }
 
-.contact-info svg {
-    height: 15px;
-  }
-
 .social-links svg {
     height: 45px;
 }
 
-.footer-subwrapper a {
-    color: #fff;
+.contact-info svg {
+    height: 15px;
 }
 
-.footer-subwrapper a:hover {
-    color: #e9ecef;
+/* Divisions */
+.wrapper {
+    margin: 0 auto;
+    width: 60%;
 }
 
+.sub-wrapper p {
+    margin: 10px 0;
+}
+
+.sub-wrapper ul {
+    margin: 10px 0 0 30px
+}
+
+.item-img {
+    width: 80%;
+}
+
+.buttons-previous-next{
+    text-decoration: none;
+}
+/* Main Pagina */
 .clock {
     user-select: none;
     width: fit-content;
@@ -122,14 +134,7 @@ h1 {
     font-size: 1.7em;
 }
 
-
-footer {
-    height: 150px;
-    color: #fff;
-    background-color: #343a40;
-    margin-top: 30px;
-}
-
+/* Films Pagina */
 .films p {
     margin-bottom: 5px;
 }
@@ -138,6 +143,7 @@ footer {
     margin: 30px 0 0 30px
 }
 
+/* Filmpersonen Pagina */
 .content-body {
     display: flex;
 }
@@ -149,23 +155,11 @@ footer {
     
 }
 
-.item-img {
-    width: 80%;
-}
-
-footer {
-    height: 150px;
-    color: #fff;
-    background-color: #343a40;
-    margin-top: 30px;
-}
-
-.sub-wrapper p {
-    margin: 10px 0;
-}
-
-.sub-wrapper ul {
-    margin: 10px 0 0 30px
+/* Songteksten Pagina */
+.songteksten-menu {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
 }
 
 .items a{
@@ -178,6 +172,7 @@ footer {
     flex-direction: column;
 }
 
+/* Gereedschap Pagina */
 .gereedschap-list {
     display: flex;
     flex-direction: column;
@@ -189,31 +184,11 @@ footer {
     margin-top: 20px;
 }
 
+/* Dranken Pagina */
 .frisdrank{
     background-color: #b97d4b;
 }
 
 .warmedranken{
     background-color: #dc0219;
-}
-
-.songteksten-menu {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 5px;
-}
-
-pre {
-    font-family:'roboto'
-}
-
-.content-preview {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 15px;
-}
-
-.preview-body {
-    border: 1px solid black;
-    padding: 10px;
 }
