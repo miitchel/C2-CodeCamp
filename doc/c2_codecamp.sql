@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.4
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 18, 2021 at 09:51 AM
--- Server version: 10.4.17-MariaDB
--- PHP Version: 8.0.2
+-- Gegenereerd op: 18 okt 2021 om 10:27
+-- Serverversie: 10.4.14-MariaDB
+-- PHP-versie: 7.4.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `filmpersonages`
+-- Tabelstructuur voor tabel `filmpersonages`
 --
 
 CREATE TABLE `filmpersonages` (
@@ -36,19 +36,20 @@ CREATE TABLE `filmpersonages` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `filmpersonages`
+-- Gegevens worden geëxporteerd voor tabel `filmpersonages`
 --
 
 INSERT INTO `filmpersonages` (`id`, `naam`, `beschrijving`, `kleur`, `afbeelding`) VALUES
 (1, 'Darth Vader', 'Darth Vader is een personage uit de Star Wars-films. Hij is als Sith-leerling ondergeschikt aan keizer Palpatine, ook bekend als Darth Sidious.\r\n\r\nIn de jaren 1977, 1980 en 1983 werd Darth Vader gespeeld door acteur David Prowse en stuntman Bob Anderson. Zijn stem werd echter ingesproken door James Earl Jones, omdat diens stem veel zwaarder, duisterder en dreigender klonk.', '#e0ab03', 'DarthVader.jpg'),
 (2, 'Timothy Dalton', 'Dalton groeide op in Manchester. Nadat hij zijn school had afgemaakt, ging hij naar het National Youth Theatre. Hij studeerde twee jaar lang aan de Royal Academy of Dramatic Art. In 1966 ging hij naar het Birmingham Repertory Theatre, waar hij hoofdrollen speelde.', '#317f43', 'TimothyDalton.jpg'),
 (3, 'Luke Skywalker', 'Luke Skywalker is een personage uit de Star Warssaga, gespeeld door acteur Mark Hamill. Luke is de tweelingbroer van prinses Leia. Hun ouders zijn Padmé Amidala en Anakin Skywalker. Skywalker werd opgevoed door zijn oom Owen Lars en tante Beru Whitesun Lars.', '#317f43', 'LukeSkywalker.jpg'),
-(4, 'James Bond', 'Lijst van James Bond films met Roger Moore:\r\n\r\nLive and Let Die (1973)\r\nThe Man with the Golden Gun (1974)\r\nThe Spy Who Loved Me (1977)\r\nMoonraker (1979)\r\nFor Your Eyes Only (1981)\r\nOctopussy (1983)\r\nA View to a Kill (1985)', '', 'JamesBond.jpg');
+(4, 'James Bond', 'Lijst van James Bond films met Roger Moore:\r\n\r\nLive and Let Die (1973)\r\nThe Man with the Golden Gun (1974)\r\nThe Spy Who Loved Me (1977)\r\nMoonraker (1979)\r\nFor Your Eyes Only (1981)\r\nOctopussy (1983)\r\nA View to a Kill (1985)', '', 'JamesBond.jpg'),
+(5, 'George Clooney', 'George Timothy Clooney (Lexington, Kentucky, 6 mei 1961) is een Amerikaans acteur, regisseur, scenarioschrijver en producent met meer dan dertig filmprijzen en nominaties op zijn naam. Voor de film Syriana won hij een Oscar voor beste mannelijke bijrol. Tevens won hij als producent een Oscar voor beste film voor Argo. Ook kreeg hij Oscarnominaties voor zijn rollen in Michael Clayton en The Descendants, een European Film Award (voor Good Night, and Good Luck) en meerdere Golden Globes (voor Syriana en O Brother, Where Art Thou?).\r\nClooney is de zoon van televisiepersoonlijkheid Nick Clooney en Nina Bruce Warren. Hij heeft een oudere zus, Ada Zeidler. Zijn vader is de broer van zangeres-actrice Rosemary Clooney.\r\n\r\nOp jonge leeftijd leerde Clooney omgaan met de camera; zijn vader nam vaak zijn familie mee naar publieke optredens en de jonge Clooney verscheen zelfs in een van zijn televisieprogramma\'s. Op de Augusta High School was Clooney een begaafd honkballer, maar tijdens een tryout bij de Cincinnati Reds bleek hij niet goed genoeg om prof te worden.', NULL, 'GeorgeClooney.jpg');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `gereedschap`
+-- Tabelstructuur voor tabel `gereedschap`
 --
 
 CREATE TABLE `gereedschap` (
@@ -60,7 +61,7 @@ CREATE TABLE `gereedschap` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `gereedschap`
+-- Gegevens worden geëxporteerd voor tabel `gereedschap`
 --
 
 INSERT INTO `gereedschap` (`id`, `naam`, `beschrijving`, `afbeelding`, `zaag`) VALUES
@@ -73,7 +74,7 @@ INSERT INTO `gereedschap` (`id`, `naam`, `beschrijving`, `afbeelding`, `zaag`) V
 -- --------------------------------------------------------
 
 --
--- Table structure for table `songteksten`
+-- Tabelstructuur voor tabel `songteksten`
 --
 
 CREATE TABLE `songteksten` (
@@ -85,7 +86,7 @@ CREATE TABLE `songteksten` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `songteksten`
+-- Gegevens worden geëxporteerd voor tabel `songteksten`
 --
 
 INSERT INTO `songteksten` (`id`, `titel`, `artiest`, `songtekst`, `kleur`) VALUES
@@ -99,45 +100,45 @@ INSERT INTO `songteksten` (`id`, `titel`, `artiest`, `songtekst`, `kleur`) VALUE
 (8, 'We Are the Champions', 'Queen', 'I\'ve paid my dues\r\nTime after time\r\nI\'ve done my sentence\r\nBut committed no crime\r\nAnd bad mistakes\r\nI\'ve made a few\r\nI\'ve had my share of sand\r\nKicked in my face\r\nBut I\'ve come through\r\nAnd we mean to go on and on and on and on\r\nWe are the champions, my friends\r\nAnd we\'ll keep on fighting till the end\r\nWe are the champions\r\nWe are the champions\r\nNo time for losers\r\n\'Cause we are the champions of the World\r\nI\'ve taken my bows\r\nAnd my curtain calls\r\nYou brought me fame and fortune\r\nAnd everything that goes with it\r\nI thank you all\r\nBut it\'s been no bed of roses\r\nNo pleasure cruise\r\nI consider it a challenge before\r\nThe human race\r\nAnd I ain\'t gonna lose\r\nAnd we mean to go on and on and on and on\r\nWe are the champions, my friends\r\nAnd we\'ll keep on fighting till the end\r\nWe are the champions\r\nWe are the champions\r\nNo time for losers\r\n\'Cause we are the champions of the World\r\nWe are the champions, my friends\r\nAnd we\'ll keep on fighting till the end\r\nWe are the champions\r\nWe are the champions\r\nNo time for losers\r\n\'Cause we are the champions of the World', '#4682b4');
 
 --
--- Indexes for dumped tables
+-- Indexen voor geëxporteerde tabellen
 --
 
 --
--- Indexes for table `filmpersonages`
+-- Indexen voor tabel `filmpersonages`
 --
 ALTER TABLE `filmpersonages`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `gereedschap`
+-- Indexen voor tabel `gereedschap`
 --
 ALTER TABLE `gereedschap`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `songteksten`
+-- Indexen voor tabel `songteksten`
 --
 ALTER TABLE `songteksten`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT voor geëxporteerde tabellen
 --
 
 --
--- AUTO_INCREMENT for table `filmpersonages`
+-- AUTO_INCREMENT voor een tabel `filmpersonages`
 --
 ALTER TABLE `filmpersonages`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT for table `gereedschap`
+-- AUTO_INCREMENT voor een tabel `gereedschap`
 --
 ALTER TABLE `gereedschap`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT for table `songteksten`
+-- AUTO_INCREMENT voor een tabel `songteksten`
 --
 ALTER TABLE `songteksten`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
