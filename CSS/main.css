@@ -70,6 +70,34 @@ h1 {
     padding: 0 5px;
 }
 
+.footer-wrapper {
+    height: 150px;
+    color: #fff;
+    background-color: #343a40;
+    margin-top: 30px;
+}
+
+.footer-center{
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-center h1{
+    font-size: 30px;
+}
+
+.footer-center a{
+    color: white;
+}
+
+.footer-subwrapper{
+    display: flex;
+    flex-direction: column;
+}
+
 .clock {
     user-select: none;
     width: fit-content;
@@ -89,13 +117,6 @@ h1 {
 
 .item-img {
     width: 80%;
-}
-
-footer {
-    height: 150px;
-    color: #fff;
-    background-color: #343a40;
-    margin-top: 30px;
 }
 
 .films p {
