@@ -130,8 +130,11 @@ footer {
 .clock {
     user-select: none;
     width: fit-content;
-    margin: 0 auto;
+    margin: 15px auto;
     font-size: 1.7em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 .content-preview {
