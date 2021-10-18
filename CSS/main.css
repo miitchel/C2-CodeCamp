@@ -4,7 +4,7 @@
 }
 
 body{
-    font-family: 'roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 a {
@@ -43,7 +43,6 @@ h1 {
 
 .buttons-previous-next{
     text-decoration: none;
-    color:#cc0000;
 }
 
 .header-wrapper {
@@ -98,27 +97,22 @@ footer {
     margin-top: 30px;
 }
 
-.films p {
-    margin-bottom: 5px;
+.sub-wrapper p {
+    margin: 10px 0;
 }
 
-.films ul {
+.sub-wrapper ul {
     margin: 30px 0 0 30px
 }
 
 .items a{
     text-decoration: none;
-    color: #cc0000;
     padding: 0 0 10px;
 }
 
 .items{
     display: flex;
     flex-direction: column;
-}
-
-.gereedschap p {
-    margin: 10px 0;
 }
 
 .gereedschap-list {
