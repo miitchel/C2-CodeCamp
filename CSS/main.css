@@ -207,3 +207,13 @@ pre {
     font-family:'roboto'
 }
 
+.content-preview {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+}
+
+.preview-body {
+    border: 1px solid black;
+    padding: 10px;
+}
