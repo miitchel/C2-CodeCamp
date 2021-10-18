@@ -92,9 +92,27 @@ h1 {
     color: white;
 }
 
-.footer-subwrapper{
+.social-links {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 0;
+    height: fit-content;
+}
+
+.contact-info svg {
+    height: 15px;
+  }
+
+.social-links svg {
+    height: 45px;
+}
+
+.footer-subwrapper a {
+    color: #fff;
+}
+
+.footer-subwrapper a:hover {
+    color: #e9ecef;
 }
 
 .clock {
@@ -128,7 +146,7 @@ footer {
     width: 50%;
     overflow-x: auto;
     white-space: pre-wrap;
-
+    
 }
 
 .item-img {
