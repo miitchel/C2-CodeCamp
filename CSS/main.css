@@ -134,6 +134,24 @@ footer {
     font-size: 1.7em;
 }
 
+.content-preview {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+}
+
+.preview-body {
+    border: 1px solid black;
+    padding: 10px;
+    height: 500px;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.preview-body pre {
+    white-space: pre-wrap;
+}
+
 /* Films Pagina */
 .films p {
     margin-bottom: 5px;
@@ -152,7 +170,6 @@ footer {
     width: 50%;
     overflow-x: auto;
     white-space: pre-wrap;
-    
 }
 
 /* Songteksten Pagina */
