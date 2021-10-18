@@ -12,12 +12,12 @@
 <main>
     <div class="wrapper">
         <h1>De frisdranken</h1>
-        <h2>Cola</h2>
-        <p></p>
-        <h2>Seven Up</h2>
-        <p></p>
-        <h2>Sinas</h2>
-        <p></p>
+        <h3>Cola</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, totam ex! Sit iusto ut laudantium distinctio debitis illum necessitatibus deserunt. Ab quibusdam minus quis itaque incidunt, blanditiis nulla tenetur beatae!</p>
+        <h3>Seven Up</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro laudantium quos delectus rerum asperiores ipsa libero autem fugiat esse! Ab commodi pariatur repellendus neque soluta hic inventore animi amet veritatis.</p>
+        <h3>Sinas</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, voluptatum amet. Pariatur magnam quae obcaecati perspiciatis veniam at hic sunt dolore nesciunt, quos excepturi nemo ducimus id recusandae quas molestias!</p>
     </div>
 </main>
 </body>
