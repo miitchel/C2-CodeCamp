@@ -17,7 +17,7 @@
 
 <head>
   <?php require_once '../head.php' ?>
-  <title><?php $personage['naam']; ?></title>
+  <title>CodeCamp - <?php $personage['naam']; ?></title>
 </head>
 
 <body style="background-color: <?php echo $personage['kleur']?>">

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <?php require_once '../head.php'; ?>
-    <title>Warme dranken</title>
+    <title>CodeCamp - Warme dranken</title>
 </head>
 <body class="warmedranken">
 <header>

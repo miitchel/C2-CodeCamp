@@ -3,7 +3,7 @@
 
 <head>
   <?php require_once '../head.php' ?>
-  <title>CodeCamp</title>
+  <title>CodeCamp - songtekst</title>
 </head>
 
 <?php
