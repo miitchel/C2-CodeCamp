@@ -37,6 +37,10 @@ p, pre {
     width: 60%;
 }
 
+h1 {
+    margin: 5px 0
+}
+
 .buttons-previous-next{
     text-decoration: none;
     color:#cc0000;
@@ -77,6 +81,7 @@ footer {
     height: 150px;
     color: #fff;
     background-color: #343a40;
+    margin-top: 30px;
 }
 
 .films p {
@@ -84,7 +89,7 @@ footer {
 }
 
 .films ul {
-    margin: 30px 30px;
+    margin: 30px 0 0 30px
 }
 
 .darthvader{
@@ -125,6 +130,7 @@ footer {
     margin-top: 20px;
 }
 
+<<<<<<< Updated upstream
 .frisdrank{
     background-color: #b97d4b;
 }
@@ -132,3 +138,15 @@ footer {
 .warmedranken{
     background-color: #dc0219;
 }
+=======
+
+.songteksten-menu {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+
+pre {
+    font-family:'roboto'
+}
+>>>>>>> Stashed changes
