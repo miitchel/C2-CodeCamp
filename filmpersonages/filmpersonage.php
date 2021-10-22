@@ -28,17 +28,6 @@
   <main>
     <div class="wrapper">
       <h1><?php echo $personage['naam']; ?></h1> 
-      
-      <div class="buttons-previous-next">
-        <?php if ($_GET['id'] > 1): ?>
-          <a href="filmpersonage.php?id=<?php echo $_GET['id'] - 1; ?>">< Vorige</a>
-        <?php endif; ?>
-        
-        <?php if ($_GET['id'] < count($personages)): ?>
-          <a href="filmpersonage.php?id=<?php echo $_GET['id'] + 1; ?>">Volgende ></a>
-        <?php endif; ?>
-      </div>
-      
       <div class="content-body">
         <pre><?php echo $personage['beschrijving']; ?>
         </pre>
