@@ -29,16 +29,6 @@
     <div class="wrapper">
       <h1><?php echo $gereedschap['naam']; ?></h1>
       
-      <div class="buttons-previous-next">
-        <?php if ($_GET['id'] > 1): ?>
-          <a href="gereedschap.php?id=<?php echo $_GET['id'] - 1; ?>">< Vorige</a>
-        <?php endif; ?>
-        
-        <?php if ($_GET['id'] < count($gereedschappen)): ?>
-          <a href="gereedschap.php?id=<?php echo $_GET['id'] + 1; ?>">Volgende ></a>
-        <?php endif; ?>
-      </div>
-      
       <div class="content-body">
         <pre><?php echo $gereedschap['beschrijving'];?>
         </pre>

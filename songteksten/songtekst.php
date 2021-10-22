@@ -29,16 +29,6 @@
 
       <h1><?php echo $songtekst['artiest'] ?> - <?php echo $songtekst['titel'] ?></h1>
       
-      <div class="buttons-previous-next">
-        <?php if ($_GET['id'] > 1): ?>
-          <a href="songtekst.php?id=<?php echo $_GET['id'] - 1; ?>">< Vorige</a>
-        <?php endif; ?>
-        
-        <?php if ($_GET['id'] < count($songteksten)): ?>
-          <a href="songtekst.php?id=<?php echo $_GET['id'] + 1; ?>">Volgende ></a>
-        <?php endif; ?>
-      </div>
-      
       <pre><?php 
           if($songtekst['songtekst'] == "[Instrumental]"){
             echo "Dit is een instrumentaal nummer";
