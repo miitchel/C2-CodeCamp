@@ -60,6 +60,23 @@ p, pre {
     padding: 0 5px;
 }
 
+.drinks p{
+    font-size: 25px;
+    margin-bottom: 10px
+}
+
+.cold-drinks p{
+    font-size: 25px;
+    border: solid black 2px;
+    margin-bottom: 10px;
+}
+
+.hot-drinks p{
+    font-size: 25px;
+    border: solid black 2px;
+    margin-bottom: 10px;
+}
+
 /* Footer */
 footer {
     height: 150px;

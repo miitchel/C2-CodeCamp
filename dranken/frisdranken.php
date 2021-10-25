@@ -13,13 +13,15 @@
 
   <main>
     <div class="wrapper">
-      <h1>De frisdranken</h1>
-      <h3>Cola</h3>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, totam ex! Sit iusto ut laudantium distinctio debitis illum necessitatibus deserunt. Ab quibusdam minus quis itaque incidunt, blanditiis nulla tenetur beatae!</p>
-      <h3>Seven Up</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro laudantium quos delectus rerum asperiores ipsa libero autem fugiat esse! Ab commodi pariatur repellendus neque soluta hic inventore animi amet veritatis.</p>
-      <h3>Sinas</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, voluptatum amet. Pariatur magnam quae obcaecati perspiciatis veniam at hic sunt dolore nesciunt, quos excepturi nemo ducimus id recusandae quas molestias!</p>
+      <div class="cold-drinks">
+        <h1>De frisdranken</h1>
+        <h3>Cola</h3>
+        <p>Cola is een koolzuurhoudende frisdrank. Het smaakt zoet (maar is qua pH zuur) en bevat circa 28-32 mg cafeïne per 33 cl.[1] Andere belangrijke ingrediënten zijn vanille, kaneel, karamel en citroen. Anders dan de meeste frisdranken bevat het geen citroenzuur, maar fosforzuur. Dieetcola bevat zowel fosforzuur als citroenzuur. Er bestaan naast suikervrije ook cafeïnevrije colavarianten.</p>
+        <h3>Seven Up</h3>
+        <p>7Up (of Seven-Up) is een frisdrankmerk van Dr Pepper Snapple Group in de Verenigde Staten en PepsiCo in de rest van de wereld.</p>
+        <h3>Sinas</h3>
+        <p>Sinas is in Nederland de benaming voor de doorgaans gele of oranje, meestal koolzuurhoudende frisdrank met sinaasappelsmaak. Zoals de meeste frisdranken bevat sinas veel suiker of in de light-versie kunstmatige zoetstoffen. Het gehalte aan sinaasappelsap bedraagt ten minste 4%. Bekende merken zijn Fanta (van de Coca-Cola Company) en Sisi (Vrumona); Orangina onderscheidt zich doordat er werkelijk vruchtvlees in zit.</p>
+      </div>
     </div>
   </main>
 
