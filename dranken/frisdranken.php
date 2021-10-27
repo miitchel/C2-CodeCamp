@@ -6,6 +6,14 @@
   <title>CodeCamp - Frisdrank</title>
 </head>
 
+<?php
+    require_once '../backend/conn.php';
+    $query = 'SELECT * FROM filmpersonages where id = 4';
+    $statement = $conn->prepare($query);
+    $statement->execute();
+    $personages = $statement->fetchAll(PDO::FETCH_ASSOC);
+?>
+
 <body class="frisdrank">
   <header>
     <?php require_once '../header.php'; ?>
@@ -17,6 +25,9 @@
         <h1>De frisdranken</h1>
         <h3>Cola</h3>
         <p>Cola is een koolzuurhoudende frisdrank. Het smaakt zoet (maar is qua pH zuur) en bevat circa 28-32 mg cafeïne per 33 cl.[1] Andere belangrijke ingrediënten zijn vanille, kaneel, karamel en citroen. Anders dan de meeste frisdranken bevat het geen citroenzuur, maar fosforzuur. Dieetcola bevat zowel fosforzuur als citroenzuur. Er bestaan naast suikervrije ook cafeïnevrije colavarianten.</p>
+        <?php foreach($personages as $personage): ?>
+          <a href="<?php echo $base_url; ?>/filmpersonages/filmpersonage.php?id=<?php echo $personage['id']; ?>"><?php echo $personage['naam']; ?></a>
+        <?php endforeach; ?>
         <h3>Seven Up</h3>
         <p>7Up (of Seven-Up) is een frisdrankmerk van Dr Pepper Snapple Group in de Verenigde Staten en PepsiCo in de rest van de wereld.</p>
         <h3>Sinas</h3>
