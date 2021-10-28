@@ -12,7 +12,7 @@
   </header>
 
   <?php
-      $query = "SELECT * FROM songteksten";
+      $query = "SELECT * FROM songteksten ORDER BY `artiest`, `titel`";
       $statement = $conn->prepare($query);
       $statement->execute();
       $songteksten = $statement->fetchAll(PDO::FETCH_ASSOC);
