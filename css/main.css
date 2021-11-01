@@ -6,6 +6,9 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    min-height: calc(100vh - 200px);
+    position: relative;
+    padding-bottom: 170px;
 }
 
 a {
@@ -85,6 +88,9 @@ footer {
     color: #fff;
     background-color: #343a40;
     margin-top: 30px;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
 }
 
 .footer-wrapper {
