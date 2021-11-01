@@ -1,6 +1,8 @@
 <div class="header-wrapper">
     <div class="header-center">
-            <h1>CodeCamp</h1>
+            <a class="logo-link" href="<?php echo $base_url; ?>/index.php">
+                <h1>CodeCamp</h1>
+            </a>
         <nav>
             <a class="nav-link" href="<?php echo $base_url; ?>/index.php">Home</a>
             <a class="nav-link" href="<?php echo $base_url; ?>/boeken/index.php">Boeken</a>
