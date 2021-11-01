@@ -4,7 +4,7 @@
     padding: 0;
 }
 
-body{
+body {
     font-family: 'Roboto', sans-serif;
 }
 
@@ -60,19 +60,19 @@ p, pre {
     padding: 0 5px;
 }
 
-.drinks p{
+.drinks p {
     font-size: 25px;
     margin-bottom: 10px
 }
 
-.cold-drinks p{
+.cold-drinks p {
     font-size: 25px;
     border: solid black 2px;
     margin-bottom: 10px;
     padding: 20px;
 }
 
-.hot-drinks p{
+.hot-drinks p {
     font-size: 25px;
     border: solid black 2px;
     margin-bottom: 10px;
@@ -94,7 +94,7 @@ footer {
     margin-top: 30px;
 }
 
-.footer-center{
+.footer-center {
     width: 70%;
     height: 100%;
     margin: 0 auto;
@@ -103,11 +103,11 @@ footer {
     align-items: center;
 }
 
-.footer-center h1{
+.footer-center h1 {
     font-size: 30px;
 }
 
-.footer-center a{
+.footer-center a {
     color: white;
 }
 
@@ -144,9 +144,10 @@ footer {
     width: 80%;
 }
 
-.buttons-previous-next{
+.buttons-previous-next {
     text-decoration: none;
 }
+
 /* Main Pagina */
 .clock {
     user-select: none;
@@ -203,12 +204,12 @@ footer {
     margin-bottom: 5px;
 }
 
-.items a{
+.items a {
     text-decoration: none;
     padding: 0 0 10px;
 }
 
-.items{
+.items {
     display: flex;
     flex-direction: column;
 }
@@ -226,10 +227,10 @@ footer {
 }
 
 /* Dranken Pagina */
-.frisdrank{
+.frisdrank {
     background-color: #b97d4b;
 }
 
-.warmedranken{
+.warmedranken {
     background-color: #dc0219;
 }
