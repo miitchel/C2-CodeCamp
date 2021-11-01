@@ -42,6 +42,7 @@ p, pre {
 .header-wrapper {
     height: 100px;
     background-color: #4682b4;
+    color: white;
 }
 
 .header-center {
@@ -55,12 +56,31 @@ p, pre {
 
 .header-center h1 {
     font-size: 50px;
+    color: white;
 }
 
-.header-center a {
+.nav-link {
     text-decoration: none;
-    color: black;
-    padding: 0 5px;
+    color: white;
+    padding: 3px 7px;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: 0 3px;
+    transition: 0.2s;
+}
+
+.nav-link:hover {
+    text-decoration: none;
+    color: #4682b4;
+    background-color: white;
+}
+
+.logo-link {
+    text-decoration: none;
+}
+
+.logo-link:hover {
+    text-decoration: none;
 }
 
 .drinks p {
