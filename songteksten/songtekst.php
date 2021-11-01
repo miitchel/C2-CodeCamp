@@ -29,7 +29,7 @@
 
       <h1><?php echo $songtekst['artiest'] ?> - <?php echo $songtekst['titel'] ?></h1>
       
-      <pre><?php 
+      <pre <?php if(isset($songtekst['textkleur'])): echo "style='color: {$songtekst['textkleur']}'"; endif; ?>><?php 
           if($songtekst['songtekst'] == "[Instrumental]"){
             echo "Dit is een instrumentaal nummer";
           }
