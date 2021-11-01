@@ -19,7 +19,7 @@
       $songteksten = $statement->fetchAll(PDO::FETCH_ASSOC);
       ?>
 
-<body style="background: <?php echo $songtekst['kleur'] ?>">
+<body style="background: <?php echo $songtekst['achtergrondkleur'] ?>">
   <header>
     <?php require_once '../header.php' ?>
   </header>

@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Gegenereerd op: 18 okt 2021 om 10:59
--- Serverversie: 10.4.14-MariaDB
--- PHP-versie: 7.4.9
+-- Generation Time: Nov 01, 2021 at 10:11 AM
+-- Server version: 10.4.14-MariaDB
+-- PHP Version: 7.4.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,22 +24,22 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Tabelstructuur voor tabel `filmpersonages`
+-- Table structure for table `filmpersonages`
 --
 
 CREATE TABLE `filmpersonages` (
   `id` int(11) NOT NULL,
   `naam` varchar(255) NOT NULL,
   `beschrijving` text NOT NULL,
-  `kleur` varchar(255) DEFAULT NULL,
+  `achtergrondkleur` varchar(255) DEFAULT NULL,
   `afbeelding` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Gegevens worden geëxporteerd voor tabel `filmpersonages`
+-- Dumping data for table `filmpersonages`
 --
 
-INSERT INTO `filmpersonages` (`id`, `naam`, `beschrijving`, `kleur`, `afbeelding`) VALUES
+INSERT INTO `filmpersonages` (`id`, `naam`, `beschrijving`, `achtergrondkleur`, `afbeelding`) VALUES
 (1, 'Darth Vader', 'Darth Vader is een personage uit de Star Wars-films. Hij is als Sith-leerling ondergeschikt aan keizer Palpatine, ook bekend als Darth Sidious.\r\n\r\nIn de jaren 1977, 1980 en 1983 werd Darth Vader gespeeld door acteur David Prowse en stuntman Bob Anderson. Zijn stem werd echter ingesproken door James Earl Jones, omdat diens stem veel zwaarder, duisterder en dreigender klonk.', '#e0ab03', 'DarthVader.jpg'),
 (2, 'Timothy Dalton', 'Dalton groeide op in Manchester. Nadat hij zijn school had afgemaakt, ging hij naar het National Youth Theatre. Hij studeerde twee jaar lang aan de Royal Academy of Dramatic Art. In 1966 ging hij naar het Birmingham Repertory Theatre, waar hij hoofdrollen speelde.', '#317f43', 'TimothyDalton.jpg'),
 (3, 'Luke Skywalker', 'Luke Skywalker is een personage uit de Star Warssaga, gespeeld door acteur Mark Hamill. Luke is de tweelingbroer van prinses Leia. Hun ouders zijn Padmé Amidala en Anakin Skywalker. Skywalker werd opgevoed door zijn oom Owen Lars en tante Beru Whitesun Lars.', '#317f43', 'LukeSkywalker.jpg'),
@@ -49,7 +49,7 @@ INSERT INTO `filmpersonages` (`id`, `naam`, `beschrijving`, `kleur`, `afbeelding
 -- --------------------------------------------------------
 
 --
--- Tabelstructuur voor tabel `gereedschap`
+-- Table structure for table `gereedschap`
 --
 
 CREATE TABLE `gereedschap` (
@@ -61,7 +61,7 @@ CREATE TABLE `gereedschap` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Gegevens worden geëxporteerd voor tabel `gereedschap`
+-- Dumping data for table `gereedschap`
 --
 
 INSERT INTO `gereedschap` (`id`, `naam`, `beschrijving`, `afbeelding`, `zaag`) VALUES
@@ -75,7 +75,7 @@ INSERT INTO `gereedschap` (`id`, `naam`, `beschrijving`, `afbeelding`, `zaag`) V
 -- --------------------------------------------------------
 
 --
--- Tabelstructuur voor tabel `songteksten`
+-- Table structure for table `songteksten`
 --
 
 CREATE TABLE `songteksten` (
@@ -83,63 +83,63 @@ CREATE TABLE `songteksten` (
   `titel` varchar(255) NOT NULL,
   `artiest` varchar(255) NOT NULL,
   `songtekst` text NOT NULL,
-  `kleur` varchar(255) DEFAULT NULL
+  `achtergrondkleur` varchar(255) DEFAULT NULL,
+  `textkleur` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Gegevens worden geëxporteerd voor tabel `songteksten`
+-- Dumping data for table `songteksten`
 --
 
-INSERT INTO `songteksten` (`id`, `titel`, `artiest`, `songtekst`, `kleur`) VALUES
-(1, 'Bohemian Rhapsody', 'Queen', 'Is this the real life?\r\nIs this just fantasy?\r\nCaught in a landside,\r\nNo escape from reality\r\nOpen your eyes,\r\nLook up to the skies and see,\r\nI\'m just a poor boy, I need no sympathy,\r\nBecause I\'m easy come, easy go,\r\nLittle high, little low,\r\nAny way the wind blows doesn\'t really matter to\r\nMe, to me\r\nMamaaa,\r\nJust killed a man,\r\nPut a gun against his head, pulled my trigger,\r\nNow he\'s dead\r\nMamaaa, life had just begun,\r\nBut now I\'ve gone and thrown it all away\r\nMama, oooh,\r\nDidn\'t mean to make you cry,\r\nIf I\'m not back again this time tomorrow,\r\nCarry on, carry on as if nothing really matters\r\nToo late, my time has come,\r\nSends shivers down my spine, body\'s aching all\r\nThe time\r\nGoodbye, everybody, I\'ve got to go,\r\nGotta leave you all behind and face the truth\r\nMama, oooh\r\nI don\'t want to die,\r\nI sometimes wish I\'d never been born at all.\r\nI see a little silhouetto of a man,\r\nScaramouch, Scaramouch, will you do the Fandango!\r\nThunderbolts and lightning, very, very frightening me\r\nGalileo, Galileo\r\nGalileo, Galileo\r\nGalileo, Figaro - magnificoo\r\nI\'m just a poor boy nobody loves me\r\nHe\'s just a poor boy from a poor family,\r\nSpare him his life from this monstrosity\r\nEasy come, easy go, will you let me go\r\nBismillah! No, we will not let you go\r\n(Let him go!) Bismillah! We will not let you go\r\n(Let him go!) Bismillah! We will not let you go\r\n(Let me go) Will not let you go\r\n(Let me go)(Never) Never let you go\r\n(Let me go) (Never) let you go (Let me go) Ah\r\nNo, no, no, no, no, no, no\r\nOh mama mia, mama mia, mama mia, let me go\r\nBeelzebub has a devil put aside for me, for me,\r\nFor meee\r\nSo you think you can stop me and spit in my eye\r\nSo you think you can love me and leave me to die\r\nOh, baby, can\'t do this to me, baby,\r\nJust gotta get out, just gotta get right outta here\r\nNothing really matters, Anyone can see,\r\nNothing really matters,\r\nNothing really matters to me\r\nAny way the wind blows...', '#4682b4'),
-(2, 'Killer Queen', 'Queen', 'She keeps her Moet et Chandon\r\nIn her pretty cabinet\r\n\"Let them eat cake\", she says\r\nJust like Marie Antoinette\r\nA built-in remedy\r\nFor Khrushchev and Kennedy\r\nAt anytime an invitation\r\nYou can\'t decline\r\nCaviar and cigarettes\r\nWell versed in etiquette\r\nExtraordinarily nice\r\nShe\'s a Killer Queen\r\nGunpowder, gelatine\r\nDynamite with a laser beam\r\nGuaranteed to blow your mind\r\nAnytime\r\nRecommended at the price\r\nInsatiable an appetite\r\nWanna try?\r\nTo avoid complications\r\nShe never kept the same address\r\nIn conversation\r\nShe spoke just like a baroness\r\nMet a man from China\r\nWent down to Geisha Minah\r\nThen again incidentally\r\nIf you\'re that way inclined\r\nPerfume came naturally from Paris (naturally)\r\nFor cars she couldn\'t care less\r\nFastidious and precise\r\nShe\'s a Killer Queen\r\nGunpowder, gelatine\r\nDynamite with a laser beam\r\nGuaranteed to blow your mind\r\nAnytime\r\nDrop of a hat she\'s as willing as\r\nPlayful as a pussy cat\r\nThen momentarily out of action\r\nTemporarily out of gas\r\nTo absolutely drive you wild, wild\r\nShe\'s all out to get you\r\nShe\'s a Killer Queen\r\nGunpowder, gelatine\r\nDynamite with a laser beam\r\nGuaranteed to blow your mind\r\nAnytime\r\nRecommended at the price\r\nInsatiable an appetite\r\nWanna try?\r\nYou wanna try', '#4682b4'),
-(3, 'Madness', 'Muse', 'I, I can\'t get these memories out of my mind\r\nAnd some kind of madness has started to evolve\r\nI, I tried so hard to let you go\r\nBut some kind of madness is swallowing me whole, yeah\r\nI have finally seen the light\r\nAnd I have finally realized\r\nWhat you mean\r\nOh oh oh\r\nAnd now, I need to know is this real love\r\nOr is it just madness keeping us afloat?\r\nAnd when I look back at all the crazy fights we had\r\nLike some kind of madness\r\nWas taking control\r\nYeah\r\nAnd now I have finally seen the light\r\nAnd I have finally realized\r\nWhat you need\r\nMm\r\nAnd now I have finally seen the end (Finally seen the end)\r\nAnd I\'m not expecting you to care (Expecting you to care)\r\nBut I have finally seen the light (Finally seen the light)\r\nI have finally realized (Realized)\r\nI need to love\r\nI need to love\r\nCome to me,\r\nTrust in your dream\r\nCome on and rescue me\r\nYes I have known, I can be wrong\r\nMaybe I\'m too headstrong\r\nOur love is\r\nMadness', '#cc0000'),
-(4, 'Uprising', 'My Baby', 'Allow me in your tub\r\nJust allow me in your club\r\nAllow me to drink from your cup\r\nI\'ll be coming back for more\r\nAllow me in your dream\r\nAllow me in your scene\r\nJust allow me on your knees\r\nI\'ll be coming back for more\r\nSisters, keep on rising\r\nBrothers, keep on rising\r\nThis girl keeps on rising\r\nKeep on rising up\r\nAll I Believe in your school\r\nI Believe in your rules\r\nI Believe in your truth\r\nI\'ll be coming back for more\r\nI Believe in your land\r\nI Believe in that man\r\nI Believe in your command\r\nI\'ll be coming back for more\r\nSisters, Brothers, Lovers\r\nKeep on rising up\r\nSisters, keep on rising\r\nBrothers, keep on rising\r\nThis girl keeps on rising\r\nKeep on rising up\r\nUprising, uprising\r\nUprising, uprising\r\nSisters, Brothers, Lovers\r\nThis girl keep on rising up\r\nSisters, keep on rising\r\nBrothers, keep on rising\r\nThis girl keeps on rising\r\nKeep on rising up', '#b97d4b'),
-(5, 'Uprising', 'Muse', 'Paranoia is in bloom\r\nThe PR transmissions will resume\r\nThey\'ll try to push drugs that keep us all dumbed down\r\nAnd hope that we will never see the truth around\r\n(So come on)\r\nAnother promise, another scene\r\nAnother packaged lie to keep us trapped in greed\r\nAnd all the green belts wrapped around our minds\r\nAnd endless red tape to keep the truth confined\r\n(So come on)\r\nThey will not force us\r\nThey will stop degrading us\r\nThey will not control us\r\nWe will be victorious\r\n(So come on)\r\nInterchanging mind control\r\nCome, let the revolution take its toll\r\nIf you could flick the switch and open your third eye\r\nYou\'d see that we should never be afraid to die\r\n(So come on)\r\nRise up and take the power back\r\nIt\'s time the fat cats had a heart attack\r\nYou know that their time\'s coming to an end\r\nWe have to unify and watch our flag ascend\r\n(So come on)\r\nThey will not force us\r\nThey will stop degrading us\r\nThey will not control us\r\nWe will be victorious\r\n(So come on)\r\nThey will not force us\r\nThey will stop degrading us\r\nThey will not control us\r\nWe will be victorious\r\n(So come on)', '#b97d4b'),
-(6, 'Plug In Baby', 'Muse', 'I\'ve exposed your lies, baby\r\nThe underneath no big surprise\r\nNow it\'s time for changing\r\nAnd cleansing everything\r\nTo forget your love\r\nMy plug in baby\r\nCrucifies my enemies\r\nWhen I\'m tired of giving\r\nMy plug in baby\r\nIn unbroken virgin realities\r\nIs tired of living\r\nDon\'t confuse\r\nBaby you\'re gonna lose\r\nYour own game\r\nChange me\r\nAnd replace the envying\r\nTo forget your love\r\nMy plug in baby\r\nCrucifies my enemies\r\nWhen I\'m tired of giving\r\nMy plug in baby\r\nIn unbroken virgin realities\r\nAnd tired of living\r\nAnd I\'ve seen your loving\r\nMine is gone', '#b97d4b'),
-(7, 'Transylvania', 'Iron Maiden', '[Instrumental]', '#cc0000'),
-(8, 'We Are the Champions', 'Queen', 'I\'ve paid my dues\r\nTime after time\r\nI\'ve done my sentence\r\nBut committed no crime\r\nAnd bad mistakes\r\nI\'ve made a few\r\nI\'ve had my share of sand\r\nKicked in my face\r\nBut I\'ve come through\r\nAnd we mean to go on and on and on and on\r\nWe are the champions, my friends\r\nAnd we\'ll keep on fighting till the end\r\nWe are the champions\r\nWe are the champions\r\nNo time for losers\r\n\'Cause we are the champions of the World\r\nI\'ve taken my bows\r\nAnd my curtain calls\r\nYou brought me fame and fortune\r\nAnd everything that goes with it\r\nI thank you all\r\nBut it\'s been no bed of roses\r\nNo pleasure cruise\r\nI consider it a challenge before\r\nThe human race\r\nAnd I ain\'t gonna lose\r\nAnd we mean to go on and on and on and on\r\nWe are the champions, my friends\r\nAnd we\'ll keep on fighting till the end\r\nWe are the champions\r\nWe are the champions\r\nNo time for losers\r\n\'Cause we are the champions of the World\r\nWe are the champions, my friends\r\nAnd we\'ll keep on fighting till the end\r\nWe are the champions\r\nWe are the champions\r\nNo time for losers\r\n\'Cause we are the champions of the World', '#4682b4');
+INSERT INTO `songteksten` (`id`, `titel`, `artiest`, `songtekst`, `achtergrondkleur`, `textkleur`) VALUES
+(1, 'Bohemian Rhapsody', 'Queen', '[Intro]\r\nIs this the real life? Is this just fantasy?\r\nCaught in a landslide, no escape from reality\r\nOpen your eyes, look up to the skies and see\r\nI\'m just a poor boy, I need no sympathy\r\nBecause I\'m easy come, easy go, little high, little low\r\nAny way the wind blows doesn\'t really matter to me, to me\r\n\r\n[Verse 1]\r\nMama, just killed a man\r\nPut a gun against his head, pulled my trigger, now he\'s dead\r\nMama, life had just begun\r\nBut now I\'ve gone and thrown it all away\r\nMama, ooh, didn\'t mean to make you cry\r\nIf I\'m not back again this time tomorrow\r\nCarry on, carry on as if nothing really matters\r\n\r\n[Verse 2]\r\nToo late, my time has come\r\nSends shivers down my spine, body\'s aching all the time\r\nGoodbye, everybody, I\'ve got to go\r\nGotta leave you all behind and face the truth\r\nMama, ooh (Any way the wind blows)\r\nI don\'t wanna die\r\nI sometimes wish I\'d never been born at all\r\n[Guitar Solo]\r\n\r\n[Verse 3]\r\nI see a little silhouetto of a man\r\nScaramouche, Scaramouche, will you do the Fandango?\r\nThunderbolt and lightning, very, very frightening me\r\n(Galileo) Galileo, (Galileo) Galileo, Galileo Figaro magnifico\r\nBut I\'m just a poor boy, nobody loves me\r\nHe\'s just a poor boy from a poor family\r\nSpare him his life from this monstrosity\r\nEasy come, easy go, will you let me go?\r\nBismillah! No, we will not let you go\r\n(Let him go) Bismillah! We will not let you go\r\n(Let him go) Bismillah! We will not let you go\r\n(Let me go) Will not let you go\r\n(Let me go) Will not let you go\r\n(Never, never, never, never let me go) Ah\r\nNo, no, no, no, no, no, no\r\n(Oh, mamma mia, mamma mia) Mamma mia, let me go\r\nBeelzebub has a devil put aside for me, for me, for me!\r\n\r\n[Verse 4]\r\nSo you think you can stone me and spit in my eye?\r\nSo you think you can love me and leave me to die?\r\nOh, baby, can\'t do this to me, baby!\r\nJust gotta get out, just gotta get right outta here\r\n[Outro]\r\n(Ooh)\r\n(Ooh, yeah, ooh, yeah)\r\nNothing really matters, anyone can see\r\nNothing really matters\r\nNothing really matters to me\r\nAny way the wind blows', '#4682b4', NULL),
+(2, 'Killer Queen', 'Queen', '[Verse 1]\r\nShe keeps Moët et Chandon\r\nIn her pretty cabinet\r\n\"Let them eat cake,\" she says\r\nJust like Marie Antoinette\r\nA built-in remedy\r\nFor Khrushchev and Kennedy (Ooh, ooh)\r\nAt anytime an invitation\r\nYou can\'t decline (Ooh, ooh)\r\n\r\n[Pre-Chorus]\r\nCaviar and cigarettes\r\nWell versed in etiquette\r\nExtraordinarily nice\r\n\r\n[Chorus]\r\nShe\'s a Killer Queen\r\nGunpowder, gelatine\r\nDynamite with a laser beam\r\nGuaranteed to blow your mind\r\n(Pa-pa-pa-pa) Anytime\r\nOoh\r\nRecommended at the price\r\nInsatiable an appetite\r\nWanna try?\r\n[Verse 2]\r\nTo avoid complications\r\nShe never kept the same address\r\nIn conversation\r\nShe spoke just like a baroness\r\nMet a man from China\r\nWent down to Geisha Minah (Ooh, ooh)\r\n(Killer, killer, she\'s a killer Queen)\r\nThen again incidentally\r\nIf you\'re that way inclined\r\n\r\n[Pre-Chorus]\r\nPerfume came naturally from Paris (Naturally)\r\nFor cars, she couldn\'t care less\r\nFastidious and precise\r\n\r\n[Chorus]\r\nShe\'s a Killer Queen\r\nGunpowder, gelatin\r\nDynamite with a laser beam\r\nGuaranteed to blow your mind\r\n(Pa-pa-pa-pa)\r\nAnytime\r\n\r\n[Guitar Solo]\r\n[Bridge]\r\nDrop of a hat she\'s as willing as\r\nPlayful as a pussy cat (Ooh)\r\nThen momentarily out of action (Ooh)\r\nTemporarily out of gas (Ta-taaa)\r\nTo absolutely drive you wild, wild\r\nShe\'s out to get you\r\n\r\n[Chorus]\r\nShe\'s a Killer Queen\r\nGunpowder, gelatine\r\nDynamite with a laser beam (Pa-pa-pa-ra)\r\nGuaranteed to blow your mind\r\nAnytime\r\nOoh\r\nRecommended at the price\r\nInsatiable an appetite\r\nWanna try?\r\nYou wanna try . ', '#4682b4', NULL),
+(3, 'Madness', 'Muse', '[Refrain]\r\nMa-ma-ma-ma-ma-ma-ma-ma mad mad mad\r\nMa-ma-ma-ma-ma-ma-ma-ma mad mad mad\r\nMa-ma-ma-ma-ma-ma-ma-ma mad mad mad\r\nMa-ma-ma-ma-ma-ma-ma-ma mad mad mad\r\n\r\n[Verse 1]\r\nI, I can\'t get these memories out of my mind\r\nAnd some kind of madness has started to evolve, mmm\r\nAnd I, I tried so hard to let you go\r\nBut some kind of madness is swallowing me whole, yeah\r\n\r\n[Bridge 1]\r\nI have finally seen the light\r\nAnd I have finally realized what you mean\r\n\r\n[Verse 2]\r\nAnd now I need to know - is this real love\r\nOr is it just madness keeping us afloat? mmm\r\nAnd when I look back at all the crazy fights we\'ve had\r\nLike some kind of madness was taking control, yeah\r\n\r\n[Bridge 2]\r\nAnd now I have finally seen the light\r\nAnd I have finally realized what you need\r\n[Verse 3]\r\nBut now I have finally seen the end\r\n(finally seen the end)\r\nAnd I\'m not expecting you to care, no\r\n(expecting you to care)\r\nThat I have finally seen the light\r\n(finally seen the light)\r\nAnd I have finally realized\r\n(realized)\r\nI need to love\r\nI need to love\r\n\r\n[Outro]\r\nCome to me, just in a dream\r\nCome on and rescue me\r\nYes I know I can be wrong\r\nBaby, you\'re too headstrong\r\nOur love is...\r\n\r\nMa-ma-ma-ma-ma-ma-ma-ma mad mad mad\r\nMa-ma-ma-ma-ma-ma-ma-ma mad mad mad\r\nMa-ma-ma-ma-ma-ma-ma-ma mad mad mad\r\nMa-ma-ma-ma-ma--ma--ma madness...', '#cc0000', NULL),
+(4, 'Uprising', 'My Baby', 'Allow me in your tub\r\nAllow me in your club\r\nAllow me to drink from your cup\r\nI\'ll be coming back for more\r\n\r\nAllow me in your dream\r\nAllow me in your scene\r\nAllow me on your knees\r\nI\'ll be coming back for more\r\n\r\nSisters, keep on rising\r\nBrothers, keep on rising\r\nThis girl keeps on rising\r\nKeep on rising up\r\n\r\nI Believe in your school\r\nI Believe in your rules\r\nI Believe in your truth\r\nI\'ll be coming back for more\r\n\r\nI Believe in your land\r\nI Believe in that man\r\nI Believe in your command\r\nI\'ll be coming back for more\r\n\r\nSisters, Brothers, Lovers\r\nKeep on rising up\r\n\r\nSisters, keep on rising\r\nBrothers, keep on rising\r\nThis girl keeps on rising\r\nKeep on rising up\r\n\r\nUprising, uprising', '#b97d4b', NULL),
+(5, 'Uprising', 'Muse', '[Verse 1]\r\nParanoia is in bloom\r\nThe PR transmissions will resume\r\nThey\'ll try to push drugs that keep us all dumbed down\r\nAnd hope that we will never see the truth around\r\n(So come on)\r\n\r\n[Verse 2]\r\nAnother promise, another seed\r\nAnother packaged lie to keep us trapped in greed\r\nAnd all the green belts wrapped around our minds\r\nAnd endless red tape to keep the truth confined\r\n(So come on)\r\n\r\n[Chorus]\r\nThey will not force us\r\nThey will stop degrading us\r\nThey will not control us\r\nWe will be victorious\r\n(So come on)\r\n\r\n[Verse 3]\r\nInterchanging mind control\r\nCome let the revolution take its toll\r\nIf you could flick the switch and open your third eye\r\nYou\'d see that we should never be afraid to die\r\n(So come on)\r\n[Verse 4]\r\nRise up and take the power back\r\nIt\'s time the fat cats had a heart attack\r\nYou know that their time\'s coming to an end\r\nWe have to unify and watch our flag ascend\r\n(So come on)\r\n\r\n[Chorus]\r\nThey will not force us\r\nThey will stop degrading us\r\nThey will not control us\r\nWe will be victorious\r\n(So come on)\r\n\r\n[Post-Chorus]\r\nHey, hey, hey, hey\r\nHey, hey, hey, hey\r\n\r\n[Chorus]\r\nThey will not force us\r\nThey will stop degrading us\r\nThey will not control us\r\nWe will be victorious\r\n(So come on)\r\n\r\n[Outro]\r\nHey, hey, hey, hey', '#b97d4b', NULL),
+(6, 'Plug In Baby', 'Muse', '[Verse 1]\r\nI\'ve exposed your lies, baby\r\nThe underneath\'s no big surprise\r\nNow it\'s time for changing\r\nAnd cleansing everything\r\nTo forget your love\r\n\r\n[Chorus]\r\nMy plug in baby\r\nCrucifies my enemies\r\nWhen I\'m tired of giving, whoa\r\nMy plug in baby\r\nIn unbroken virgin realities\r\nIs tired of living\r\n\r\n[Verse 2]\r\nDon\'t confuse\r\nBaby you\'re gonna lose\r\nYour own game\r\nChange me\r\nAnd replace the envying\r\nTo forget your love\r\n\r\n[Chorus]\r\nMy plug in baby\r\nCrucifies my enemies\r\nWhen I\'m tired of giving, whoa\r\nMy plug in baby\r\nIn unbroken virgin realities\r\nIs tired of living\r\n[Outro]\r\nAnd I\'ve seen your loving\r\nMine is gone\r\nAnd I\'ve been in trouble\r\nWooaahhh', '#b97d4b', NULL),
+(8, 'We Are the Champions', 'Queen', '[Verse 1]\r\nI\'ve paid my dues\r\nTime after time\r\nI\'ve done my sentence\r\nBut committed no crime\r\nAnd bad mistakes\r\nI\'ve made a few\r\nI\'ve had my share of sand kicked in my face\r\nBut I\'ve come through\r\n(And I need to go on and on, and on, and on)\r\n\r\n[Chorus]\r\nWe are the champions, my friends\r\nAnd we\'ll keep on fighting \'til the end\r\nWe are the champions\r\nWe are the champions\r\nNo time for losers\r\n\'Cause we are the champions\r\nOf the world\r\n\r\n[Verse 2]\r\nI\'ve taken my bows\r\nAnd my curtain calls\r\nYou brought me fame and fortune and everything that goes with it\r\nI thank you all\r\nBut it\'s been no bed of roses\r\nNo pleasure cruise\r\nI consider it a challenge before the whole human race\r\nAnd I ain\'t gonna lose\r\n(And I need to go on and on, and on, and on)\r\n[Chorus]\r\nWe are the champions, my friends\r\nAnd we\'ll keep on fighting \'til the end\r\nWe are the champions\r\nWe are the champions\r\nNo time for losers\r\n\'Cause we are the champions\r\nOf the world\r\n\r\n[Outro]\r\nWe are the champions, my friends\r\nAnd we\'ll keep on fighting \'til the end, oh\r\nWe are the champions\r\nWe are the champions\r\nNo time for losers\r\n\'Cause we are the champions...', '#4682b4', NULL);
 
 --
--- Indexen voor geëxporteerde tabellen
+-- Indexes for dumped tables
 --
 
 --
--- Indexen voor tabel `filmpersonages`
+-- Indexes for table `filmpersonages`
 --
 ALTER TABLE `filmpersonages`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexen voor tabel `gereedschap`
+-- Indexes for table `gereedschap`
 --
 ALTER TABLE `gereedschap`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexen voor tabel `songteksten`
+-- Indexes for table `songteksten`
 --
 ALTER TABLE `songteksten`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT voor geëxporteerde tabellen
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT voor een tabel `filmpersonages`
+-- AUTO_INCREMENT for table `filmpersonages`
 --
 ALTER TABLE `filmpersonages`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT voor een tabel `gereedschap`
+-- AUTO_INCREMENT for table `gereedschap`
 --
 ALTER TABLE `gereedschap`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
--- AUTO_INCREMENT voor een tabel `songteksten`
+-- AUTO_INCREMENT for table `songteksten`
 --
 ALTER TABLE `songteksten`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
