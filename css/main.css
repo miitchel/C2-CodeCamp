@@ -95,6 +95,14 @@ p, pre {
     padding: 20px;
 }
 
+.hot-drinks{
+    color: pink;
+}
+
+.hot-drinks a{
+    color:rgb(255, 155, 6);
+}
+
 .hot-drinks p {
     font-size: 25px;
     border: solid black 2px;
