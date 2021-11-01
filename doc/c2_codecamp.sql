@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 01, 2021 at 10:11 AM
--- Server version: 10.4.14-MariaDB
--- PHP Version: 7.4.10
+-- Gegenereerd op: 01 nov 2021 om 10:25
+-- Serverversie: 10.4.14-MariaDB
+-- PHP-versie: 7.4.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `filmpersonages`
+-- Tabelstructuur voor tabel `filmpersonages`
 --
 
 CREATE TABLE `filmpersonages` (
@@ -36,7 +36,7 @@ CREATE TABLE `filmpersonages` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `filmpersonages`
+-- Gegevens worden geëxporteerd voor tabel `filmpersonages`
 --
 
 INSERT INTO `filmpersonages` (`id`, `naam`, `beschrijving`, `achtergrondkleur`, `afbeelding`) VALUES
@@ -49,7 +49,7 @@ INSERT INTO `filmpersonages` (`id`, `naam`, `beschrijving`, `achtergrondkleur`, 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `gereedschap`
+-- Tabelstructuur voor tabel `gereedschap`
 --
 
 CREATE TABLE `gereedschap` (
@@ -61,21 +61,20 @@ CREATE TABLE `gereedschap` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `gereedschap`
+-- Gegevens worden geëxporteerd voor tabel `gereedschap`
 --
 
 INSERT INTO `gereedschap` (`id`, `naam`, `beschrijving`, `afbeelding`, `zaag`) VALUES
 (1, 'Beitel', 'Een moderne beitel is een langwerpig stuk gereedschap van staal met aan één zijde een scherpe snede. Een beitel voor houtbewerking heeft meestal een houten of kunststoffen handvat ook wel hecht genoemd of is onderdeel van een schaaf. De snijkant wordt vouw genoemd. Verder zijn er beitels voor onder andere steen- en metaalbewerking. Beitels kunnen machinaal en handmatig toegepast worden.\r\n\r\nHoutbeitels worden als handgereedschap in het algemeen in de houtbewerking gebruikt om te kunnen steken of te hakken. Aan de toepassing ontleent ieder type houtbeitel zijn vorm. Houtbeitels kunnen qua hoofdverdeling onderscheiden worden in hakbeitels, steekbeitels en gutsen. Alle beitels zijn voorzien van een heft van hout of kunststof, ook wel een hecht genoemd. Het heft is voorzien van een metalen blad dat (vrijwel altijd) aan één zijde een scherp toelopend uiteinde heeft, de vouw en de snede geheten. Bij het minder scherp worden kan de beitel opnieuw worden geslepen, waarna de ontstane braam eraf kan worden gewet met een wetsteen. De hoek waaronder de houtbeitel wordt geslepen (de slijphoek) en gewet, is belangrijk en kan variëren per type beitel. In het algemeen geldt hiervoor: Hoe kleiner de slijphoek, des te scherper de beitel echter des te eerder hij weer bot wordt.', 'Beitel.jpg', 0),
 (2, 'Hamer', 'Een hamer is een klop- of slagwerktuig. Een hamer bestaat uit een steel, het handvat, met aan het eind de zogenaamde hamerkop.\r\n\r\nDe vorm en grootte en het materiaal van de hamerkop en de lengte van de steel hangen sterk af van het type hamer. Bij hamers met een ijzeren hamerkop staat vaak het aantal grammen in het metaal geslagen. Voor speciale uitvoeringen, zoals voor percussie-instrumenten, wordt ook de term mallet (uit het Engels) gebruikt. \r\n\r\nTypen hamers\r\n\r\nDe volgende tabel geeft een overzicht van typen van hamers:\r\n\r\ngewone hamer\r\n    Een metalen hamerkop van 50-300 gram op een houten steel van ca. 30 cm lang die onder meer wordt gebruikt om spijkers (draadnagels) in houten voorwerpen te slaan.\r\nklauwhamer\r\n    Zoals een gewone hamer, maar de achterkant van de hamer heeft een platte V-groef waarin spijkers geklemd kunnen worden. De bovenkant is afgerond zodat de geklemde spijker uit het object gerold kan worden.\r\nvuist of moker\r\n    Een zware hamer met een vierkante hamerkop van 1000-1500 gram op een steel van 30 cm lang, voor zwaar werk. Met een rubberen opzetstuk wordt een vuisthamer gebruikt om tegels of straatstenen in het zand te leggen voor het maken van bestrating.\r\ntegelhamer\r\n    Houten hamer met grote houten kop en een korte steel. Om tegels te leggen.\r\nstraathamer\r\n    Een hamer om te straten, met een kromme zijde om stenen door midden te slaan, en een rechte afgeplatte zijde om stenen aan te slaan (bestraten).\r\nvoorhamer\r\n    Een hamer om sloopwerkzaamheden uit te voeren. Een hamerkop van een paar kilo op een steel van een meter lang.\r\nrubberen hamer\r\n    Een rubberen hamer wordt vooral gebruikt bij het leggen van tegels op grond. Een kleine hamer met een rubberen gewicht die kan worden gebruikt voor voorzichtig werk, zoals het aankloppen van kleine lijmverbindingen in de houtbewerking. Kampeerders gebruiken een rubber hamer om de tentpinnen in de grond te slaan. Door (para)medici wordt soms een kleine hamer gebruikt met een zacht gedeelte. Deze heeft meestal twee gekleurde uiteinden.\r\nhouten hamer\r\n    Een hamer met een houten hamerkop die kan worden gebruikt voor voorzichtig werk zoals het vooruithelpen van een guts of beitel in de houtbewerking. De hamerkop is gemaakt van een harde houtsoort, meestal beukenhout. De steel is gemaakt van een taaie houtsoort. Dit is nodig om de klappen goed op te kunnen vangen. De hamerkop kan rond (cilindervormig) zijn of een blokvorm hebben.\r\nsmidshamer\r\n    Een hamer met een gevormd gewicht die kan worden gebruikt om (heet) ijzer op een aambeeld vorm te geven.\r\nbikhamer\r\n    Een hamer om te bikken, bijvoorbeeld om slakken te verwijderen, ontstaan bij het elektrisch lassen.\r\nsleg, slegge of slei\r\n    Een langstelige houten hamer, onder meer in gebruik om wiggen in boomstammen te drijven en palen in de grond te slaan.\r\nzandhamer\r\n    Een (kunststoffen) hamer met diverse hamerkoppen en grootte, waarvan de kop gevuld is met zand, teneinde de terugslag te verkleinen. Wordt toegepast wanneer het werkstuk met zo min mogelijke beschadiging vervormd moet worden of om lagers op assen te tikken.\r\nbankhamer\r\n    Een bankhamer heeft aan één kant een iets bolvormig baanvlak en aan de andere kant een pen die haaks staat op de langsrichting van de steel. Hij is verkrijgbaar met een gewicht van 50 tot 2000 gram. Deze hamer wordt veel gebruikt door bank- en plaatwerkers.\r\nhaarhamer\r\n    Een haarhamer is een hamer, waarbij de beide kanten uitlopen in een dun plat vlak. Hiermee wordt een zeis gehaard (scherp gemaakt).\r\nbolhamer\r\n    Een bol- of bolkophamer is een hamer voor het bewerken van metaal, met name het hameren (strekken) van bijvoorbeeld koper- of zilverplaat.\r\nbilhamer of zwaaispits\r\n    Een bilhamer is een hamer voor het bewerken van molenstenen. Door steenhouwers wordt deze hamer zwaaispits genoemd en werd voorheen gebruikt voor het ruw voorhakken van blokken natuursteen.\r\npletsteenhamer\r\n    Een pletsteenhamer of bouchardhamer is een hamer voor het vlak maken van molenstenen en andere natuursteen\r\nloodhamer\r\n    Een loodhamer is een hamer die in de beeldhouwkunst gebruikt wordt, bestaande uit een (veelal) koperen of messing band gevuld met lood. De boven- en onderkant van de band zijn open. Met die open – loden – kant wordt geslagen op een beitel. Het lood dempt de slagkracht door de relatieve zachtheid. De koperen band houdt het lood bijeen en is noodzakelijk om de kop aan een (houten) steel te bevestigen. Aldus kan zeer fijn scharreer- of bouchardeerwerk gedaan worden in natuursteen.\r\nnoodhamer\r\n    Een noodhamer is bedoeld om, bijvoorbeeld bij een ongeluk, een ruit in te slaan om een voertuig (trein, auto) of een ruimte snel te kunnen verlaten.\r\nstemhamer\r\n    Eigenlijk geen hamer maar een sleutel (daarom ook stemsleutel genoemd). Wordt gebruikt bij het stemmen van piano\'s en andere snaarinstrumenten.\r\nreflexhamer\r\n    Hamertje met een rubber kop waarmee bij een medisch onderzoek de reflexen, vooral de kniepeesreflex, worden getest.\r\nkrijgshamer\r\n    Hamer die als wapen gebruikt wordt.\r\nterugslagvrije hamer (dead blow)\r\n    Een hamer gevuld met hagel (lood).', 'Hamer.jpg', 0),
 (3, 'Schroevendraaiers', 'Een schroevendraaier is een stuk gereedschap waarmee schroeven worden aangebracht en verwijderd. Het bestaat uit een handvat met een metalen steel waarvan het uiteinde zo gevormd is dat het in de kop van een schroef past.\r\n\r\nSchroevendraaiers zijn in velerlei soorten, afmetingen en kwaliteiten verkrijgbaar. Er bestaan schroevendraaiers met een platte punt, alsook met een ster- of kruiskop. Goede schroevendraaiers zijn vervaardigd van speciale staalsoorten. Bij een juiste toepassing zijn ze praktisch onbreekbaar. Het heft van een schroevendraaier wordt meestal gemaakt van een slagvaste, onbreekbare kunststof. Soms vervaardigt men het heft nog van een taaie houtsoort. De grootte van schroevendraaier en schroef dienen bij elkaar te \'passen\'.', 'Schroevendraaiers.jpg', 0),
-(4, 'Kettingzaag', 'Een kettingzaag bestaat uit drie delen:\r\n\r\n    Motor: de benzinemotor moet gestart worden met een startkoord (als bij een motormaaier). De motor drijft een kettingrondsel aan, dat zorgt dat de ketting gaat ronddraaien. Bij een elektrische kettingzaag dient men op een knop te drukken om de motor te starten.\r\n    Zaagblad: het zaagblad of \"zwaard\" zit aan de motorbehuizing vastgemaakt. Het zaagblad heeft over de hele lengte een groef. De functie van de groef is tweeledig. Enerzijds zorgt de groef ervoor dat de ketting rechtuit blijft lopen. Anderzijds zorgt de groef voor vervoer van olie, die de ketting smeert. De groef moet voldoende diep zijn, en vrij zijn van vuil en zand. Dit alles om de ketting er niet uit te laten lopen. Het blad mag niet beschadigd zijn en er mogen geen bramen op zitten.\r\n    Zaagketting: een schakelketting met zaagtanden, ook wel beitels genoemd. Een zaagketting bestaat uit drie onderdelen: de zaagtand, de dieptesteller en de aandrijfschakel. Deze zijn met elkaar verbonden door verbindingsschakels. De zaagtand doet het werk. Deze beitelt het hout uit de zaagsnede. De dieptesteller bepaalt de diepte waarmee de zaagtand door het hout gaat. Staat deze te hoog afgesteld neemt de zaagtand bijna geen hout mee. Staat deze te diep afgesteld kan de zaagtand vastlopen in het hout (ook wel \'agressief\' genoemd). De aandrijfschakel loopt door de groef van het zaagblad. Hieruit haalt hij olie om de ketting te smeren.\r\n\r\nEen kettingzaag is onnauwkeurig en levert een vrij brede en rafelige zaagsnede op, maar is door zijn handzaamheid en lange zaagblad uitermate geschikt om gehele bomen om te zagen of tot brandhout te verwerken. De omgezaagde bomen worden daarna soms in zagerijen met lintzagen of cirkelzagen tot planken verwerkt, omdat deze een nettere zaagsnede geven. ', 'Kettingzaag.jpg', 1),
 (5, 'Cirkelzaag', 'Een cirkelzaag (of radiaalzaag) is een zaag met een blad in de vorm van een stalen schijf, die met een motor tot een zeer hoog toerental wordt aangedreven. De schijf kan in een zaagtafel zijn gemonteerd waarover het te zagen materiaal wordt aangevoerd, of ingebouwd in een constructie samen met een elektromotor tot draagbare handcirkelzaag. Deze heeft een minder krachtige motor en kan ook dunner materiaal zagen.\r\n\r\nCirkelzaagbladen bestaan in soorten en maten, met allerlei verschillende vertandingen, en ook de diameter kan sterk verschillen (normaal is ca. 25 cm, maar industriële cirkelzagen met veel grotere bladen bestaan ook). De maximale zaagdiepte wordt bepaald door de straal van het cirkelzaagblad.\r\n\r\nEen cirkelzaag die bedoeld is om latten, buizen, houten balken en dergelijke te zagen wordt ook wel een afkorter of afkortzaag genoemd. ', 'Cirkelzaag.jpg', 1),
 (6, 'Handzaag', 'Een handzaag is een zaag met een taps toelopend, veerkrachtig stalen zaagblad dat voorzien is van een handvat. Het blad is ongeveer 1 mm dik, 400 à 500 mm lang, en circa 100 mm breed.\r\n\r\nDe tanden van de zaag (met een lengte van circa 5 mm elk) zijn \'gezet\', dat wil zeggen dat ze om beurten naar links en naar rechts zijn gebogen. De zetting bedraagt een derde van de bladdikte naar links en een derde naar rechts. Dit zorgt voor een bredere zaagsnede zodat het zaagblad niet in het hout klemt en vastloopt. Om gemakkelijk te kunnen zagen dienen de tanden niet alleen gezet, maar ook scherp te zijn.\r\n\r\nVoor het zagen van hout in de lengterichting van de houtvezels (schulpen) dienen de tanden onder een andere hoek geslepen te zijn dan bij het afkorten, waarbij dwars op de lengterichting van de vezels wordt gezaagd. Bij zagen die geschikt zijn voor het schulpen zijn de tanden haaks geslepen, waardoor deze tijdens het zagen een krul vormen. Bij het afkorten dient de hoek van de tanden tussen de 65 en 75° te liggen. Deze werken dan als een soort mesjes en snijden de houtvezels dwars door. Tegenwoordig ziet men meestal zagen die zogenaamd universeel zijn: men kan ermee afkorten en mee schulpen.', 'Handzaag.jpg', 1);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `songteksten`
+-- Tabelstructuur voor tabel `songteksten`
 --
 
 CREATE TABLE `songteksten` (
@@ -88,58 +87,58 @@ CREATE TABLE `songteksten` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `songteksten`
+-- Gegevens worden geëxporteerd voor tabel `songteksten`
 --
 
 INSERT INTO `songteksten` (`id`, `titel`, `artiest`, `songtekst`, `achtergrondkleur`, `textkleur`) VALUES
 (1, 'Bohemian Rhapsody', 'Queen', '[Intro]\r\nIs this the real life? Is this just fantasy?\r\nCaught in a landslide, no escape from reality\r\nOpen your eyes, look up to the skies and see\r\nI\'m just a poor boy, I need no sympathy\r\nBecause I\'m easy come, easy go, little high, little low\r\nAny way the wind blows doesn\'t really matter to me, to me\r\n\r\n[Verse 1]\r\nMama, just killed a man\r\nPut a gun against his head, pulled my trigger, now he\'s dead\r\nMama, life had just begun\r\nBut now I\'ve gone and thrown it all away\r\nMama, ooh, didn\'t mean to make you cry\r\nIf I\'m not back again this time tomorrow\r\nCarry on, carry on as if nothing really matters\r\n\r\n[Verse 2]\r\nToo late, my time has come\r\nSends shivers down my spine, body\'s aching all the time\r\nGoodbye, everybody, I\'ve got to go\r\nGotta leave you all behind and face the truth\r\nMama, ooh (Any way the wind blows)\r\nI don\'t wanna die\r\nI sometimes wish I\'d never been born at all\r\n[Guitar Solo]\r\n\r\n[Verse 3]\r\nI see a little silhouetto of a man\r\nScaramouche, Scaramouche, will you do the Fandango?\r\nThunderbolt and lightning, very, very frightening me\r\n(Galileo) Galileo, (Galileo) Galileo, Galileo Figaro magnifico\r\nBut I\'m just a poor boy, nobody loves me\r\nHe\'s just a poor boy from a poor family\r\nSpare him his life from this monstrosity\r\nEasy come, easy go, will you let me go?\r\nBismillah! No, we will not let you go\r\n(Let him go) Bismillah! We will not let you go\r\n(Let him go) Bismillah! We will not let you go\r\n(Let me go) Will not let you go\r\n(Let me go) Will not let you go\r\n(Never, never, never, never let me go) Ah\r\nNo, no, no, no, no, no, no\r\n(Oh, mamma mia, mamma mia) Mamma mia, let me go\r\nBeelzebub has a devil put aside for me, for me, for me!\r\n\r\n[Verse 4]\r\nSo you think you can stone me and spit in my eye?\r\nSo you think you can love me and leave me to die?\r\nOh, baby, can\'t do this to me, baby!\r\nJust gotta get out, just gotta get right outta here\r\n[Outro]\r\n(Ooh)\r\n(Ooh, yeah, ooh, yeah)\r\nNothing really matters, anyone can see\r\nNothing really matters\r\nNothing really matters to me\r\nAny way the wind blows', '#4682b4', NULL),
 (2, 'Killer Queen', 'Queen', '[Verse 1]\r\nShe keeps Moët et Chandon\r\nIn her pretty cabinet\r\n\"Let them eat cake,\" she says\r\nJust like Marie Antoinette\r\nA built-in remedy\r\nFor Khrushchev and Kennedy (Ooh, ooh)\r\nAt anytime an invitation\r\nYou can\'t decline (Ooh, ooh)\r\n\r\n[Pre-Chorus]\r\nCaviar and cigarettes\r\nWell versed in etiquette\r\nExtraordinarily nice\r\n\r\n[Chorus]\r\nShe\'s a Killer Queen\r\nGunpowder, gelatine\r\nDynamite with a laser beam\r\nGuaranteed to blow your mind\r\n(Pa-pa-pa-pa) Anytime\r\nOoh\r\nRecommended at the price\r\nInsatiable an appetite\r\nWanna try?\r\n[Verse 2]\r\nTo avoid complications\r\nShe never kept the same address\r\nIn conversation\r\nShe spoke just like a baroness\r\nMet a man from China\r\nWent down to Geisha Minah (Ooh, ooh)\r\n(Killer, killer, she\'s a killer Queen)\r\nThen again incidentally\r\nIf you\'re that way inclined\r\n\r\n[Pre-Chorus]\r\nPerfume came naturally from Paris (Naturally)\r\nFor cars, she couldn\'t care less\r\nFastidious and precise\r\n\r\n[Chorus]\r\nShe\'s a Killer Queen\r\nGunpowder, gelatin\r\nDynamite with a laser beam\r\nGuaranteed to blow your mind\r\n(Pa-pa-pa-pa)\r\nAnytime\r\n\r\n[Guitar Solo]\r\n[Bridge]\r\nDrop of a hat she\'s as willing as\r\nPlayful as a pussy cat (Ooh)\r\nThen momentarily out of action (Ooh)\r\nTemporarily out of gas (Ta-taaa)\r\nTo absolutely drive you wild, wild\r\nShe\'s out to get you\r\n\r\n[Chorus]\r\nShe\'s a Killer Queen\r\nGunpowder, gelatine\r\nDynamite with a laser beam (Pa-pa-pa-ra)\r\nGuaranteed to blow your mind\r\nAnytime\r\nOoh\r\nRecommended at the price\r\nInsatiable an appetite\r\nWanna try?\r\nYou wanna try . ', '#4682b4', NULL),
 (3, 'Madness', 'Muse', '[Refrain]\r\nMa-ma-ma-ma-ma-ma-ma-ma mad mad mad\r\nMa-ma-ma-ma-ma-ma-ma-ma mad mad mad\r\nMa-ma-ma-ma-ma-ma-ma-ma mad mad mad\r\nMa-ma-ma-ma-ma-ma-ma-ma mad mad mad\r\n\r\n[Verse 1]\r\nI, I can\'t get these memories out of my mind\r\nAnd some kind of madness has started to evolve, mmm\r\nAnd I, I tried so hard to let you go\r\nBut some kind of madness is swallowing me whole, yeah\r\n\r\n[Bridge 1]\r\nI have finally seen the light\r\nAnd I have finally realized what you mean\r\n\r\n[Verse 2]\r\nAnd now I need to know - is this real love\r\nOr is it just madness keeping us afloat? mmm\r\nAnd when I look back at all the crazy fights we\'ve had\r\nLike some kind of madness was taking control, yeah\r\n\r\n[Bridge 2]\r\nAnd now I have finally seen the light\r\nAnd I have finally realized what you need\r\n[Verse 3]\r\nBut now I have finally seen the end\r\n(finally seen the end)\r\nAnd I\'m not expecting you to care, no\r\n(expecting you to care)\r\nThat I have finally seen the light\r\n(finally seen the light)\r\nAnd I have finally realized\r\n(realized)\r\nI need to love\r\nI need to love\r\n\r\n[Outro]\r\nCome to me, just in a dream\r\nCome on and rescue me\r\nYes I know I can be wrong\r\nBaby, you\'re too headstrong\r\nOur love is...\r\n\r\nMa-ma-ma-ma-ma-ma-ma-ma mad mad mad\r\nMa-ma-ma-ma-ma-ma-ma-ma mad mad mad\r\nMa-ma-ma-ma-ma-ma-ma-ma mad mad mad\r\nMa-ma-ma-ma-ma--ma--ma madness...', '#cc0000', NULL),
-(4, 'Uprising', 'My Baby', 'Allow me in your tub\r\nAllow me in your club\r\nAllow me to drink from your cup\r\nI\'ll be coming back for more\r\n\r\nAllow me in your dream\r\nAllow me in your scene\r\nAllow me on your knees\r\nI\'ll be coming back for more\r\n\r\nSisters, keep on rising\r\nBrothers, keep on rising\r\nThis girl keeps on rising\r\nKeep on rising up\r\n\r\nI Believe in your school\r\nI Believe in your rules\r\nI Believe in your truth\r\nI\'ll be coming back for more\r\n\r\nI Believe in your land\r\nI Believe in that man\r\nI Believe in your command\r\nI\'ll be coming back for more\r\n\r\nSisters, Brothers, Lovers\r\nKeep on rising up\r\n\r\nSisters, keep on rising\r\nBrothers, keep on rising\r\nThis girl keeps on rising\r\nKeep on rising up\r\n\r\nUprising, uprising', '#b97d4b', NULL),
-(5, 'Uprising', 'Muse', '[Verse 1]\r\nParanoia is in bloom\r\nThe PR transmissions will resume\r\nThey\'ll try to push drugs that keep us all dumbed down\r\nAnd hope that we will never see the truth around\r\n(So come on)\r\n\r\n[Verse 2]\r\nAnother promise, another seed\r\nAnother packaged lie to keep us trapped in greed\r\nAnd all the green belts wrapped around our minds\r\nAnd endless red tape to keep the truth confined\r\n(So come on)\r\n\r\n[Chorus]\r\nThey will not force us\r\nThey will stop degrading us\r\nThey will not control us\r\nWe will be victorious\r\n(So come on)\r\n\r\n[Verse 3]\r\nInterchanging mind control\r\nCome let the revolution take its toll\r\nIf you could flick the switch and open your third eye\r\nYou\'d see that we should never be afraid to die\r\n(So come on)\r\n[Verse 4]\r\nRise up and take the power back\r\nIt\'s time the fat cats had a heart attack\r\nYou know that their time\'s coming to an end\r\nWe have to unify and watch our flag ascend\r\n(So come on)\r\n\r\n[Chorus]\r\nThey will not force us\r\nThey will stop degrading us\r\nThey will not control us\r\nWe will be victorious\r\n(So come on)\r\n\r\n[Post-Chorus]\r\nHey, hey, hey, hey\r\nHey, hey, hey, hey\r\n\r\n[Chorus]\r\nThey will not force us\r\nThey will stop degrading us\r\nThey will not control us\r\nWe will be victorious\r\n(So come on)\r\n\r\n[Outro]\r\nHey, hey, hey, hey', '#b97d4b', NULL),
+(4, 'Uprising', 'My Baby', 'Allow me in your tub\r\nAllow me in your club\r\nAllow me to drink from your cup\r\nI\'ll be coming back for more\r\n\r\nAllow me in your dream\r\nAllow me in your scene\r\nAllow me on your knees\r\nI\'ll be coming back for more\r\n\r\nSisters, keep on rising\r\nBrothers, keep on rising\r\nThis girl keeps on rising\r\nKeep on rising up\r\n\r\nI Believe in your school\r\nI Believe in your rules\r\nI Believe in your truth\r\nI\'ll be coming back for more\r\n\r\nI Believe in your land\r\nI Believe in that man\r\nI Believe in your command\r\nI\'ll be coming back for more\r\n\r\nSisters, Brothers, Lovers\r\nKeep on rising up\r\n\r\nSisters, keep on rising\r\nBrothers, keep on rising\r\nThis girl keeps on rising\r\nKeep on rising up\r\n\r\nUprising, uprising', '#317f43', '#cc0000'),
+(5, 'Uprising', 'Muse', '[Verse 1]\r\nParanoia is in bloom\r\nThe PR transmissions will resume\r\nThey\'ll try to push drugs that keep us all dumbed down\r\nAnd hope that we will never see the truth around\r\n(So come on)\r\n\r\n[Verse 2]\r\nAnother promise, another seed\r\nAnother packaged lie to keep us trapped in greed\r\nAnd all the green belts wrapped around our minds\r\nAnd endless red tape to keep the truth confined\r\n(So come on)\r\n\r\n[Chorus]\r\nThey will not force us\r\nThey will stop degrading us\r\nThey will not control us\r\nWe will be victorious\r\n(So come on)\r\n\r\n[Verse 3]\r\nInterchanging mind control\r\nCome let the revolution take its toll\r\nIf you could flick the switch and open your third eye\r\nYou\'d see that we should never be afraid to die\r\n(So come on)\r\n[Verse 4]\r\nRise up and take the power back\r\nIt\'s time the fat cats had a heart attack\r\nYou know that their time\'s coming to an end\r\nWe have to unify and watch our flag ascend\r\n(So come on)\r\n\r\n[Chorus]\r\nThey will not force us\r\nThey will stop degrading us\r\nThey will not control us\r\nWe will be victorious\r\n(So come on)\r\n\r\n[Post-Chorus]\r\nHey, hey, hey, hey\r\nHey, hey, hey, hey\r\n\r\n[Chorus]\r\nThey will not force us\r\nThey will stop degrading us\r\nThey will not control us\r\nWe will be victorious\r\n(So come on)\r\n\r\n[Outro]\r\nHey, hey, hey, hey', '#317f43', '#cc0000'),
 (6, 'Plug In Baby', 'Muse', '[Verse 1]\r\nI\'ve exposed your lies, baby\r\nThe underneath\'s no big surprise\r\nNow it\'s time for changing\r\nAnd cleansing everything\r\nTo forget your love\r\n\r\n[Chorus]\r\nMy plug in baby\r\nCrucifies my enemies\r\nWhen I\'m tired of giving, whoa\r\nMy plug in baby\r\nIn unbroken virgin realities\r\nIs tired of living\r\n\r\n[Verse 2]\r\nDon\'t confuse\r\nBaby you\'re gonna lose\r\nYour own game\r\nChange me\r\nAnd replace the envying\r\nTo forget your love\r\n\r\n[Chorus]\r\nMy plug in baby\r\nCrucifies my enemies\r\nWhen I\'m tired of giving, whoa\r\nMy plug in baby\r\nIn unbroken virgin realities\r\nIs tired of living\r\n[Outro]\r\nAnd I\'ve seen your loving\r\nMine is gone\r\nAnd I\'ve been in trouble\r\nWooaahhh', '#b97d4b', NULL),
 (8, 'We Are the Champions', 'Queen', '[Verse 1]\r\nI\'ve paid my dues\r\nTime after time\r\nI\'ve done my sentence\r\nBut committed no crime\r\nAnd bad mistakes\r\nI\'ve made a few\r\nI\'ve had my share of sand kicked in my face\r\nBut I\'ve come through\r\n(And I need to go on and on, and on, and on)\r\n\r\n[Chorus]\r\nWe are the champions, my friends\r\nAnd we\'ll keep on fighting \'til the end\r\nWe are the champions\r\nWe are the champions\r\nNo time for losers\r\n\'Cause we are the champions\r\nOf the world\r\n\r\n[Verse 2]\r\nI\'ve taken my bows\r\nAnd my curtain calls\r\nYou brought me fame and fortune and everything that goes with it\r\nI thank you all\r\nBut it\'s been no bed of roses\r\nNo pleasure cruise\r\nI consider it a challenge before the whole human race\r\nAnd I ain\'t gonna lose\r\n(And I need to go on and on, and on, and on)\r\n[Chorus]\r\nWe are the champions, my friends\r\nAnd we\'ll keep on fighting \'til the end\r\nWe are the champions\r\nWe are the champions\r\nNo time for losers\r\n\'Cause we are the champions\r\nOf the world\r\n\r\n[Outro]\r\nWe are the champions, my friends\r\nAnd we\'ll keep on fighting \'til the end, oh\r\nWe are the champions\r\nWe are the champions\r\nNo time for losers\r\n\'Cause we are the champions...', '#4682b4', NULL);
 
 --
--- Indexes for dumped tables
+-- Indexen voor geëxporteerde tabellen
 --
 
 --
--- Indexes for table `filmpersonages`
+-- Indexen voor tabel `filmpersonages`
 --
 ALTER TABLE `filmpersonages`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `gereedschap`
+-- Indexen voor tabel `gereedschap`
 --
 ALTER TABLE `gereedschap`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `songteksten`
+-- Indexen voor tabel `songteksten`
 --
 ALTER TABLE `songteksten`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT voor geëxporteerde tabellen
 --
 
 --
--- AUTO_INCREMENT for table `filmpersonages`
+-- AUTO_INCREMENT voor een tabel `filmpersonages`
 --
 ALTER TABLE `filmpersonages`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT for table `gereedschap`
+-- AUTO_INCREMENT voor een tabel `gereedschap`
 --
 ALTER TABLE `gereedschap`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
--- AUTO_INCREMENT for table `songteksten`
+-- AUTO_INCREMENT voor een tabel `songteksten`
 --
 ALTER TABLE `songteksten`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
