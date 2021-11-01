@@ -20,7 +20,7 @@
   <title>CodeCamp - <?php $personage['naam']; ?></title>
 </head>
 
-<body style="background-color: <?php echo $personage['kleur']?>">
+<body style="background-color: <?php echo $personage['achtergrondkleur']?>">
   <header>
     <?php require_once '../header.php' ?>
   </header>
