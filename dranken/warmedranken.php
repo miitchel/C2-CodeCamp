@@ -21,7 +21,7 @@
 
   <main>
     <div class="wrapper">
-      <div class="hot-drinks">
+      <div class="drinks hot-drinks">
         <h1>De warme dranken</h1>
         <h3>Koffie</h3>
         <?php foreach($personages as $personage): ?>

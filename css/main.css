@@ -84,30 +84,17 @@ p, pre {
 }
 
 .drinks p {
-    font-size: 25px;
-    margin-bottom: 10px
-}
-
-.cold-drinks p {
-    font-size: 25px;
     border: solid black 2px;
     margin-bottom: 10px;
     padding: 20px;
 }
 
-.hot-drinks{
+.hot-drinks {
     color: pink;
 }
 
-.hot-drinks a{
+.drinks a {
     color:rgb(255, 155, 6);
-}
-
-.hot-drinks p {
-    font-size: 25px;
-    border: solid black 2px;
-    margin-bottom: 10px;
-    padding: 20px
 }
 
 /* Footer */
