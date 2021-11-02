@@ -84,8 +84,11 @@ p, pre {
 }
 
 .drinks p {
-    font-size: 25px;
     margin-bottom: 10px
+}
+
+.cold-drinks{
+    color: whitesmoke;
 }
 
 .cold-drinks p {
