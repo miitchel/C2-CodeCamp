@@ -6,9 +6,9 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    min-height: calc(100vh - 200px);
+    min-height: calc(100vh - 320px);
     position: relative;
-    padding-bottom: 170px;
+    padding-bottom: 320px;
 }
 
 a {
@@ -99,7 +99,7 @@ p, pre {
 
 /* Footer */
 footer {
-    height: 150px;
+    height: 270px;
     color: #fff;
     background-color: #343a40;
     margin-top: 30px;
@@ -121,7 +121,7 @@ footer {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .footer-center h1 {
