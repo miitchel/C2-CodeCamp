@@ -11,7 +11,7 @@
     $query = 'SELECT * FROM filmpersonages where id = 5';
     $statement = $conn->prepare($query);
     $statement->execute();
-    $personages = $statement->fetchAll(PDO::FETCH_ASSOC);
+    $GeorgeClooney = $statement->fetch(PDO::FETCH_ASSOC);
 ?>
 
 <body class="warmedranken">
@@ -24,9 +24,9 @@
       <div class="drinks hot-drinks">
         <h1>De warme dranken</h1>
         <h3>Koffie</h3>
-        <?php foreach($personages as $personage): ?>
-          <a href="<?php echo $base_url; ?>/filmpersonages/filmpersonage.php?id=<?php echo $personage['id']; ?>"><?php echo $personage['naam']; ?></a>
-        <?php endforeach; ?>
+        
+        <a href="<?php echo $base_url; ?>/filmpersonages/filmpersonage.php?id=<?php echo $GeorgeClooney['id']; ?>"><?php echo $GeorgeClooney['naam']; ?></a>
+        
         <p>Koffie is een meestal warm genuttigde drank, die wordt bereid op basis van water en gedroogde en gebrande pitten van de koffieplant (Coffea spp.) die vanwege hun vorm koffiebonen worden genoemd. Koffie bevat het stimulerende middel cafeïne. De meeste soorten in het geslacht Coffea komen van nature voor in tropisch Afrika en op de eilanden in de Indische Oceaan. Ze vinden hun oorsprong in Ethiopië, Jemen en Soedan</p>
         <h3>Latte</h3>
         <p>Een caffè latte of latte is een in veel Europese en Amerikaanse gelegenheden geserveerde koffiedrank, gemaakt met espresso en warme melk. Vermoedelijk ligt de oorsprong in de Verenigde Staten, waar de drank uitgevonden zou zijn om de espresso uit de opkomende koffiemachines wat te verzachten. In Italie wordt de term niet of nauwelijks gebruikt. Wie latte bestelt, krijgt melk.</p>
@@ -35,11 +35,11 @@
       </div>
     </div>
   </main>
-  
+
   <footer>
-      <?php require_once '../footer.php'; ?>
+    <?php require_once '../footer.php'; ?>
   </footer>
-  
+
 </body>
 
 </html>
