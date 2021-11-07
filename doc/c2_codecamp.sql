@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Gegenereerd op: 01 nov 2021 om 10:25
--- Serverversie: 10.4.14-MariaDB
--- PHP-versie: 7.4.10
+-- Generation Time: Nov 07, 2021 at 04:40 PM
+-- Server version: 10.4.21-MariaDB
+-- PHP Version: 8.0.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,35 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Tabelstructuur voor tabel `filmpersonages`
+-- Table structure for table `boeken`
+--
+
+CREATE TABLE `boeken` (
+  `id` int(11) NOT NULL,
+  `titel` varchar(255) NOT NULL,
+  `auteur` varchar(255) NOT NULL,
+  `paginas` int(11) NOT NULL,
+  `beschrijving` text DEFAULT NULL,
+  `prijs` double DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `boeken`
+--
+
+INSERT INTO `boeken` (`id`, `titel`, `auteur`, `paginas`, `beschrijving`, `prijs`) VALUES
+(1, 'Harry Potter en de Steen der Wijzen', 'JK Rowling', 232, '', 0),
+(2, 'The Hitchhiker\'s Guide to the Galaxy', 'Douglas Adams', 336, NULL, NULL),
+(3, 'Oorlog en vrede', 'Tolstoj', 1624, NULL, NULL),
+(4, 'Moonraker', 'Ian Fleming', 256, NULL, NULL),
+(5, 'Dr. No', 'Ian Fleming', 320, NULL, NULL),
+(6, 'Turks fruit ', 'Jan Wolkers', 192, NULL, NULL),
+(7, 'Wurgtechnieken', 'Ward Ruyslinck', 205, NULL, NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `filmpersonages`
 --
 
 CREATE TABLE `filmpersonages` (
@@ -36,7 +64,7 @@ CREATE TABLE `filmpersonages` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Gegevens worden geëxporteerd voor tabel `filmpersonages`
+-- Dumping data for table `filmpersonages`
 --
 
 INSERT INTO `filmpersonages` (`id`, `naam`, `beschrijving`, `achtergrondkleur`, `afbeelding`) VALUES
@@ -49,7 +77,7 @@ INSERT INTO `filmpersonages` (`id`, `naam`, `beschrijving`, `achtergrondkleur`, 
 -- --------------------------------------------------------
 
 --
--- Tabelstructuur voor tabel `gereedschap`
+-- Table structure for table `gereedschap`
 --
 
 CREATE TABLE `gereedschap` (
@@ -61,7 +89,7 @@ CREATE TABLE `gereedschap` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Gegevens worden geëxporteerd voor tabel `gereedschap`
+-- Dumping data for table `gereedschap`
 --
 
 INSERT INTO `gereedschap` (`id`, `naam`, `beschrijving`, `afbeelding`, `zaag`) VALUES
@@ -74,7 +102,7 @@ INSERT INTO `gereedschap` (`id`, `naam`, `beschrijving`, `afbeelding`, `zaag`) V
 -- --------------------------------------------------------
 
 --
--- Tabelstructuur voor tabel `songteksten`
+-- Table structure for table `songteksten`
 --
 
 CREATE TABLE `songteksten` (
@@ -87,7 +115,7 @@ CREATE TABLE `songteksten` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Gegevens worden geëxporteerd voor tabel `songteksten`
+-- Dumping data for table `songteksten`
 --
 
 INSERT INTO `songteksten` (`id`, `titel`, `artiest`, `songtekst`, `achtergrondkleur`, `textkleur`) VALUES
@@ -99,49 +127,94 @@ INSERT INTO `songteksten` (`id`, `titel`, `artiest`, `songtekst`, `achtergrondkl
 (6, 'Plug In Baby', 'Muse', '[Verse 1]\r\nI\'ve exposed your lies, baby\r\nThe underneath\'s no big surprise\r\nNow it\'s time for changing\r\nAnd cleansing everything\r\nTo forget your love\r\n\r\n[Chorus]\r\nMy plug in baby\r\nCrucifies my enemies\r\nWhen I\'m tired of giving, whoa\r\nMy plug in baby\r\nIn unbroken virgin realities\r\nIs tired of living\r\n\r\n[Verse 2]\r\nDon\'t confuse\r\nBaby you\'re gonna lose\r\nYour own game\r\nChange me\r\nAnd replace the envying\r\nTo forget your love\r\n\r\n[Chorus]\r\nMy plug in baby\r\nCrucifies my enemies\r\nWhen I\'m tired of giving, whoa\r\nMy plug in baby\r\nIn unbroken virgin realities\r\nIs tired of living\r\n[Outro]\r\nAnd I\'ve seen your loving\r\nMine is gone\r\nAnd I\'ve been in trouble\r\nWooaahhh', '#b97d4b', NULL),
 (8, 'We Are the Champions', 'Queen', '[Verse 1]\r\nI\'ve paid my dues\r\nTime after time\r\nI\'ve done my sentence\r\nBut committed no crime\r\nAnd bad mistakes\r\nI\'ve made a few\r\nI\'ve had my share of sand kicked in my face\r\nBut I\'ve come through\r\n(And I need to go on and on, and on, and on)\r\n\r\n[Chorus]\r\nWe are the champions, my friends\r\nAnd we\'ll keep on fighting \'til the end\r\nWe are the champions\r\nWe are the champions\r\nNo time for losers\r\n\'Cause we are the champions\r\nOf the world\r\n\r\n[Verse 2]\r\nI\'ve taken my bows\r\nAnd my curtain calls\r\nYou brought me fame and fortune and everything that goes with it\r\nI thank you all\r\nBut it\'s been no bed of roses\r\nNo pleasure cruise\r\nI consider it a challenge before the whole human race\r\nAnd I ain\'t gonna lose\r\n(And I need to go on and on, and on, and on)\r\n[Chorus]\r\nWe are the champions, my friends\r\nAnd we\'ll keep on fighting \'til the end\r\nWe are the champions\r\nWe are the champions\r\nNo time for losers\r\n\'Cause we are the champions\r\nOf the world\r\n\r\n[Outro]\r\nWe are the champions, my friends\r\nAnd we\'ll keep on fighting \'til the end, oh\r\nWe are the champions\r\nWe are the champions\r\nNo time for losers\r\n\'Cause we are the champions...', '#4682b4', NULL);
 
+-- --------------------------------------------------------
+
 --
--- Indexen voor geëxporteerde tabellen
+-- Table structure for table `users`
+--
+
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `username` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`id`, `name`, `username`, `password`) VALUES
+(1, 'Sales manager', 'salesmanager', '$2y$10$XRcMggutE9yEN.uqf8WSAOmcLD4acYE3mbYI9QfsgZh5lEJ6MjT.u'),
+(2, 'Content leverancier', 'contentleverancier', '$2y$10$XRcMggutE9yEN.uqf8WSAOmcLD4acYE3mbYI9QfsgZh5lEJ6MjT.u');
+
+--
+-- Indexes for dumped tables
 --
 
 --
--- Indexen voor tabel `filmpersonages`
+-- Indexes for table `boeken`
+--
+ALTER TABLE `boeken`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `filmpersonages`
 --
 ALTER TABLE `filmpersonages`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexen voor tabel `gereedschap`
+-- Indexes for table `gereedschap`
 --
 ALTER TABLE `gereedschap`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexen voor tabel `songteksten`
+-- Indexes for table `songteksten`
 --
 ALTER TABLE `songteksten`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT voor geëxporteerde tabellen
+-- Indexes for table `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT voor een tabel `filmpersonages`
+-- AUTO_INCREMENT for table `boeken`
+--
+ALTER TABLE `boeken`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+--
+-- AUTO_INCREMENT for table `filmpersonages`
 --
 ALTER TABLE `filmpersonages`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT voor een tabel `gereedschap`
+-- AUTO_INCREMENT for table `gereedschap`
 --
 ALTER TABLE `gereedschap`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
--- AUTO_INCREMENT voor een tabel `songteksten`
+-- AUTO_INCREMENT for table `songteksten`
 --
 ALTER TABLE `songteksten`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+
+--
+-- AUTO_INCREMENT for table `users`
+--
+ALTER TABLE `users`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
