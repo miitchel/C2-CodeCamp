@@ -18,7 +18,9 @@ session_start();
         <div class="wrapper">
             <div class="sub-wrapper">
                 <h1>Acteurs/Actrices</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi, optio animi! Hic iste nostrum, deleniti quis cumque, laboriosam doloremque quisquam sunt veritatis commodi necessitatibus assumenda blanditiis quaerat nisi possimus! Facilis eos doloremque fuga eum, vitae sapiente. Distinctio, sequi. Ratione ducimus sapiente, delectus voluptatum hic saepe excepturi beatae iure numquam quas, ut nesciunt expedita in temporibus nisi molestiae libero officiis deleniti! Eaque provident odit consequuntur, iste asperiores voluptate iure veritatis fuga necessitatibus iusto adipisci dolorum aperiam sit laboriosam, harum vel eos animi esse eum aut? Quo cupiditate tempore porro beatae vitae aperiam corrupti cumque ut voluptatem alias. Incidunt ut accusamus dicta.</p>
+                <p>Een acteur of actrice is iemand die een personage uitbeeldt in een verhaal of rollenspel.</p>
+                <p>Een acteur kan zijn werk doen in een theatervoorstelling (theateracteur) of film (filmacteur), op televisie, tijdens communicatietrainingen als trainingsacteur en hij kan als zijn stem lenen aan tekenfilmfiguren en reclameboodschappen (stemacteur). Acteurs kunnen ook een personage in een computerspel uitbeelden, of als simulatiemodel hiervoor worden ingezet waarna deze gerenderd worden. Elk van deze disciplines vereist een eigen techniek.</p>
+                <p>Hieronder vind je een lijst van een aantal acteurs/actrices:</p>
             </div>
         </div>
     </main>
