@@ -36,28 +36,20 @@ session_start();
                 <p>Mensen en mensapen kunnen gereedschap gebruiken, maar ook bij kraaiachtigen, Goffins kaketoes, zeeotters en dolfijnen is het gebruik van gereedschap gezien.</p>
                 <p>Andere termen die gebruikt worden voor bepaalde typen gereedschap zijn gerei (meervoud van zachter gereedschap) en instrument (over het algemeen een meer geavanceerd of erg specialistisch stuk gereedschap). Voor groter en zwaarder gereedschap wordt meestal de term werktuig gebruikt.</p>
                 <p>Er zijn stukken gereedschap die in verschillende velden worden gebruikt, maar vaak is gereedschap zeer gespecialiseerd voor een bepaalde toepassing.</p>
-
-                <div class="items">
+                <div class="items-container">
+                    <div class="items">
                     <h2>Gereedschap</h2>
-                    <ul>
                         <?php foreach($gereedschappen as $gereedschap): ?>
-                            
-                            <li>
-                                <a href="gereedschap.php?id=<?php echo $gereedschap['id']; ?>"><?php echo $gereedschap['naam']; ?></a>
-                            </li>
+                            <a href="gereedschap.php?id=<?php echo $gereedschap['id']; ?>"><?php echo $gereedschap['naam']; ?></a>
                         <?php endforeach; ?>
-                    </ul>
                                 
                     <div class="zagen">
                         <h3>Zagen</h3>
-                        <ul>
                             <?php foreach($zagen as $zaag): ?>
-                                <li>
-                                    <a href="gereedschap.php?id=<?php echo $zaag['id']; ?>"><?php echo $zaag['naam']; ?></a>
-                                </li>
+                                <a href="gereedschap.php?id=<?php echo $zaag['id']; ?>"><?php echo $zaag['naam']; ?></a>
                             <?php endforeach; ?>
-                        </ul>
                     </div>
+                </div>
                 </div>
             </div>
         </div>
