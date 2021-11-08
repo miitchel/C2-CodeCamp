@@ -16,7 +16,7 @@
             <?php if(isset($_SESSION['user_id'])): ?>
             <p>Hallo <?php echo $_SESSION['user_fullname'] ?> | <a href="<?php echo $base_url; ?>/account/logout.php" >Uitloggen</a></p>
             <?php else: ?>
-            <p><a href="<?php echo $base_url; ?>/account/login.php" >Inloggen</a></p>
+            <p><a class="login" href="<?php echo $base_url; ?>/account/login.php" >Inloggen</a></p>
             <?php endif; ?>
         </div>
     </div>
