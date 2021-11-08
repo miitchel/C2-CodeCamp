@@ -175,12 +175,6 @@ iframe{
     font-size: 20px;
 }
 
-.items2 {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-}
-
 .item-img {
     width: 80%;
 }
@@ -248,11 +242,11 @@ iframe{
 .items-container {
     width: 200px;
     display: flex;
-    justify-content: center;
 }
 
 .items a {
     padding: 0 0 10px;
+    font-size: 20px;
 }
 
 .items {
@@ -277,6 +271,7 @@ iframe{
 }
 
 /* Dranken Pagina */
+
 .frisdrank {
     background-color: #b97d4b;
 }
