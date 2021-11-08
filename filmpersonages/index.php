@@ -27,7 +27,7 @@ session_start();
     <div class="wrapper">
       <div class="sub-wrapper">
         <h1>Filmpersonages</h1>
-        <div class="items">
+        <div class="items2">
           <ul>
             <?php foreach($personages as $personage): ?>
             <li>
