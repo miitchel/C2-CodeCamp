@@ -11,11 +11,13 @@
             <a class="nav-link" href="<?php echo $base_url; ?>/acteurs/index.php">Acteurs/Actrices</a>
             <a class="nav-link" href="<?php echo $base_url; ?>/gereedschap/index.php">Gereedschap</a>
             <a class="nav-link" href="<?php echo $base_url; ?>/dranken/index.php">Dranken</a>
-            <?php if(isset($_SESSION['user_id'])): ?>
-            <p>Hallo <?php echo $_SESSION['user_name'] ?> | <a href="<?php echo $base_url; ?>/account/logout.php" >Uitloggen</a></p>
-        <?php else: ?>
-          <p><a href="<?php echo $base_url; ?>/account/login.php" >Inloggen</a></p>
-        <?php endif; ?>
         </nav>
+        <div class="login">
+            <?php if(isset($_SESSION['user_id'])): ?>
+            <p>Hallo <?php echo $_SESSION['user_fullname'] ?> | <a href="<?php echo $base_url; ?>/account/logout.php" >Uitloggen</a></p>
+            <?php else: ?>
+            <p><a href="<?php echo $base_url; ?>/account/login.php" >Inloggen</a></p>
+            <?php endif; ?>
+        </div>
     </div>
 </div>
