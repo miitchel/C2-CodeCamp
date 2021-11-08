@@ -45,7 +45,7 @@ session_start();
                         <p><?php if(isset($boek['beschrijving'])): echo $boek['beschrijving']; else: echo "<em>Nog niet beschikbaar</em>"; endif ?></p>
                         <p style="font-size: 25px">Prijs: <?php if(isset($boek['prijs'])): echo $boek['prijs']; else: echo "<em>nog niet bekend</em>"; endif ?> </p>
                         <?php if (isset($_SESSION['user_name'])){
-                            if($_SESSION['user_name'] == "contentleverancier") {
+                            if($_SESSION['user_name'] == "contentleverancier" || $_SESSION['user_name'] == "salesmanager") {
                                     $url = "edit-boek.php?id={$boek['id']}";
                                     echo "<a href='$url'>aanpassen</a>";
                                 }; 
