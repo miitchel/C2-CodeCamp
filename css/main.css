@@ -83,19 +83,6 @@ p, pre {
     text-decoration: none;
 }
 
-.drinks p {
-    border: solid black 2px;
-    margin-bottom: 10px;
-    padding: 20px;
-}
-
-.hot-drinks {
-    color: pink;
-}
-
-.drinks a {
-    color:rgb(255, 155, 6);
-}
 
 /* Footer */
 footer {
@@ -271,6 +258,28 @@ iframe{
 }
 
 /* Dranken Pagina */
+.drink-body {
+    display: flex;
+    border: solid black 2px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.drinks .img-container {
+    height: 150px;
+}
+
+.dranken-img {
+    height: 150px;
+}
+
+.dranken-img.img-left {
+    margin-right: 20px;
+}
+
+.dranken-img.img-right {
+    margin-left: 20px;
+}
 
 .frisdrank {
     background-color: #b97d4b;
@@ -280,6 +289,15 @@ iframe{
     background-color: #dc0219;
 }
 
+.hot-drinks {
+    color: pink;
+}
+
+.drinks a {
+    color:rgb(255, 155, 6);
+}
+
+/* Boeken Pagina */
 .boek-item{
     margin-bottom: 40px;
 }
