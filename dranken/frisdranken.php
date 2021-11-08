@@ -11,10 +11,10 @@ session_start();
 
 <?php
     require_once '../backend/conn.php';
-    $query = 'SELECT * FROM filmpersonages WHERE id = 4';
+    $query = 'SELECT * FROM acteurs WHERE id = 2';
     $statement = $conn->prepare($query);
     $statement->execute();
-    $JamesBond = $statement->fetch(PDO::FETCH_ASSOC);
+    $RogerMoore = $statement->fetch(PDO::FETCH_ASSOC);
 ?>
 
 <body class="frisdrank">
@@ -28,7 +28,7 @@ session_start();
         <h1>De frisdranken</h1>
         <h3>Cola</h3>
 
-        <a href="<?php echo $base_url; ?>/filmpersonages/filmpersonage.php?id=<?php echo $JamesBond['id']; ?>"><?php echo $JamesBond['naam']; ?></a>
+        <a href="<?php echo $base_url; ?>/acteurs/acteurs.php?id=<?php echo $RogerMoore['id']; ?>"><?php echo $RogerMoore['naam']; ?></a>
 
         <div class="drink-body">
           <div class="img-container">

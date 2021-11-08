@@ -11,7 +11,7 @@ session_start();
 
 <?php
     require_once '../backend/conn.php';
-    $query = 'SELECT * FROM filmpersonages where id = 5';
+    $query = 'SELECT * FROM acteurs where id = 3';
     $statement = $conn->prepare($query);
     $statement->execute();
     $GeorgeClooney = $statement->fetch(PDO::FETCH_ASSOC);
@@ -28,7 +28,7 @@ session_start();
         <h1>De warme dranken</h1>
         <h3>Koffie</h3>
 
-        <a href="<?php echo $base_url; ?>/filmpersonages/filmpersonage.php?id=<?php echo $GeorgeClooney['id']; ?>"><?php echo $GeorgeClooney['naam']; ?></a>
+        <a href="<?php echo $base_url; ?>/acteurs/acteurs.php?id=<?php echo $GeorgeClooney['id']; ?>"><?php echo $GeorgeClooney['naam']; ?></a>
 
         <div class="drink-body">
           <div class="img-container">
