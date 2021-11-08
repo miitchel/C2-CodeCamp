@@ -37,7 +37,7 @@ session_start();
                 <p>Andere termen die gebruikt worden voor bepaalde typen gereedschap zijn gerei (meervoud van zachter gereedschap) en instrument (over het algemeen een meer geavanceerd of erg specialistisch stuk gereedschap). Voor groter en zwaarder gereedschap wordt meestal de term werktuig gebruikt.</p>
                 <p>Er zijn stukken gereedschap die in verschillende velden worden gebruikt, maar vaak is gereedschap zeer gespecialiseerd voor een bepaalde toepassing.</p>
 
-                <div class="items">
+                <div class="items2">
                     <h2>Gereedschap</h2>
                     <ul>
                         <?php foreach($gereedschappen as $gereedschap): ?>
