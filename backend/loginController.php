@@ -24,5 +24,6 @@ $user = $statement->fetch(PDO::FETCH_ASSOC);
 
   $_SESSION['user_id'] = $user['id'];
   $_SESSION['user_name'] = $user['username'];
+  $_SESSION['user_fullname'] = $user['name'];
   header("Location: ../index.php");
 ?>
