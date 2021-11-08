@@ -158,6 +158,10 @@ iframe{
     margin: 10px 0 0 30px
 }
 
+.sub-wrapper a {
+    font-size: 20px;
+}
+
 .item-img {
     width: 80%;
 }
@@ -222,14 +226,23 @@ iframe{
     margin-bottom: 5px;
 }
 
+.items-container {
+    width: 200px;
+    display: flex;
+}
+
 .items a {
-    text-decoration: none;
     padding: 0 0 10px;
+    font-size: 20px;
 }
 
 .items {
     display: flex;
     flex-direction: column;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px 3px rgba(0,0,0,0.5);
 }
 
 /* Gereedschap Pagina */
