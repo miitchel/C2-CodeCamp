@@ -92,7 +92,7 @@ CREATE TABLE `filmpersonages` (
 
 INSERT INTO `filmpersonages` (`id`, `naam`, `beschrijving`, `achtergrondkleur`, `afbeelding`) VALUES
 (1, 'Darth Vader', 'Darth Vader is een personage uit de Star Wars-films. Hij is als Sith-leerling ondergeschikt aan keizer Palpatine, ook bekend als Darth Sidious.\r\n\r\nIn de jaren 1977, 1980 en 1983 werd Darth Vader gespeeld door acteur David Prowse en stuntman Bob Anderson. Zijn stem werd echter ingesproken door James Earl Jones, omdat diens stem veel zwaarder, duisterder en dreigender klonk.', '#e0ab03', 'DarthVader.jpg'),
-(3, 'Luke Skywalker', 'Luke Skywalker is een personage uit de Star Warssaga, gespeeld door acteur Mark Hamill. Luke is de tweelingbroer van prinses Leia. Hun ouders zijn Padmé Amidala en Anakin Skywalker. Skywalker werd opgevoed door zijn oom Owen Lars en tante Beru Whitesun Lars.', '#317f43', 'LukeSkywalker.jpg');
+(2, 'Luke Skywalker', 'Luke Skywalker is een personage uit de Star Warssaga, gespeeld door acteur Mark Hamill. Luke is de tweelingbroer van prinses Leia. Hun ouders zijn Padmé Amidala en Anakin Skywalker. \r\n\r\nSkywalker werd opgevoed door zijn oom Owen Lars en tante Beru Whitesun Lars.', '#317f43', 'LukeSkywalker.jpg');
 
 -- --------------------------------------------------------
 
