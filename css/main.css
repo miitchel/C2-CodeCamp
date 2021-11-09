@@ -300,9 +300,9 @@ iframe{
     display: flex;
     flex-direction: column;
     padding: 10px;
-    border: 1px solid black;
+    /* border: 1px solid black;
     border-radius: 20px;
-    box-shadow: 5px 5px 10px 3px rgba(0,0,0,0.5);
+    box-shadow: 5px 5px 10px 3px rgba(0,0,0,0.5); */
 }
 
 .items2{

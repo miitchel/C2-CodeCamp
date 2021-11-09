@@ -49,21 +49,20 @@ elseif
 
           <?php if ($_SESSION['user_name'] == "contentleverancier"){?>
           <label for="beschrijving"><h4 style="font-size: 22px;">Boek beschrijving:</h4></label>
-          <textarea style="font-family: 'Roboto';" id="beschrijving" name="beschrijving" rows="8" cols="100"><?php echo $boek['beschrijving'] ?></textarea>`
+          <textarea class="input" style="font-family: 'Roboto'; width: 700px;" id="beschrijving" name="beschrijving" rows="10" cols="1000"><?php echo $boek['beschrijving'] ?></textarea>
           <?php } elseif ($_SESSION['user_name'] == "salesmanager") {?>
           
           <label for="beschrijving"><h4 style="font-size: 22px;">Boek beschrijving:</h4></label>
           <p><?php echo $boek['beschrijving'] ?></p>
           <?php }?>
-          
           <?php if ($_SESSION['user_name'] == "salesmanager"){?>
           <label for="prijs"><p style="font-size: 25px">Prijs:</p></label>
-          <input type="text" name="prijs" id="prijs" value="<?php echo $boek['prijs']; ?>"><br>
+          <input class="input" type="text" name="prijs" id="prijs" value="<?php echo $boek['prijs']; ?>"><br>
           <?php } elseif ($_SESSION['user_name'] == "contentleverancier") {?>
-            <p style="font-size: 25px">Prijs: €<?php echo $boek['prijs'] ?>
-            <p></p>
+            <p style="font-size: 25px">Prijs: €<?php echo $boek['prijs'] ?></p>
+            <br>
           <?php }?>
-          <input type="submit" value="Boek aanpassen">  
+          <input class="login-button" type="submit" value="Boek aanpassen">  
         </form>
         </div> 
     </div>
