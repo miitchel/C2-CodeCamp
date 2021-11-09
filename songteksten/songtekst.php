@@ -31,16 +31,17 @@ session_start();
     <div class="wrapper">
 
       <h1><?php echo $songtekst['artiest'] ?> - <?php echo $songtekst['titel'] ?></h1>
-      
-      <pre <?php if(isset($songtekst['textkleur'])): echo "style='color: {$songtekst['textkleur']}'"; endif; ?>><?php 
-          if($songtekst['songtekst'] == "[Instrumental]"){
-            echo "Dit is een instrumentaal nummer";
-          }
-          else{
-            echo $songtekst['songtekst'];
-          }
-        ?>
-      </pre>
+        <div class="items2">
+          <pre <?php if(isset($songtekst['textkleur'])): echo "style='color: {$songtekst['textkleur']}'"; endif; ?>><?php 
+              if($songtekst['songtekst'] == "[Instrumental]"){
+                echo "Dit is een instrumentaal nummer";
+              }
+              else{
+                echo $songtekst['songtekst'];
+              }
+            ?>
+          </pre>
+        </div>
 
     </div>
   </main>
