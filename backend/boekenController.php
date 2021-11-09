@@ -21,8 +21,13 @@ $action = $_POST['action'];
 if($action == "update"){
   $id = $_POST['id'];
   $beschrijving = $_POST['beschrijving'];
+  
   $prijs = $_POST['prijs'];
-
+  
+  if(empty($prijs) && $prijs != 0) {
+    $prijs = null;
+  }
+  
   if(isset($errors))
     {
         var_dump($errors);
