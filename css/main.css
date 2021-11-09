@@ -116,7 +116,7 @@ p, pre {
     text-decoration: none;
 }
 
-.login {
+.login, .logout {
     color: white;
 }
 
