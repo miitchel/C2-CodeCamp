@@ -43,7 +43,7 @@ session_start();
                         <p style="margin-bottom: 10px;">Aantal pagina's: <strong><?php echo $boek['paginas'] ?></strong></p>
                         <h4 style="font-size: 22px;">Boek beschrijving:</h4>
                         <p><?php if(isset($boek['beschrijving'])): echo $boek['beschrijving']; else: echo "<em>Nog niet beschikbaar</em>"; endif ?></p>
-                        <p style="font-size: 25px">Prijs: <?php if(isset($boek['prijs'])): echo $boek['prijs']; else: echo "<em>nog niet bekend</em>"; endif ?> </p>
+                        <p style="font-size: 25px">Prijs: <?php if(($boek['prijs']) == null): echo "<em>nog niet bekend</em>"; else: echo $boek['prijs']; endif ?> </p>
                         <?php if (isset($_SESSION['user_name'])){
                             if($_SESSION['user_name'] == "contentleverancier" || $_SESSION['user_name'] == "salesmanager") {
                                     $url = "edit-boek.php?id={$boek['id']}";

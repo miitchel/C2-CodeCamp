@@ -40,7 +40,7 @@ CREATE TABLE `acteurs` (
 --
 
 INSERT INTO `acteurs` (`id`, `naam`, `beschrijving`, `achtergrondkleur`, `afbeelding`) VALUES
-(1, 'Timothy Dalton', 'Dalton groeide op in Manchester. Nadat hij zijn school had afgemaakt, ging hij naar het National Youth Theatre. Hij studeerde twee jaar lang aan de Royal Academy of Dramatic Art. In 1966 ging hij naar het Birmingham Repertory Theatre, waar hij hoofdrollen speelde.', '#317f43', 'TimothyDalton.jpg'),
+(1, 'Timothy Dalton', 'Dalton groeide op in Manchester. Nadat hij zijn school had afgemaakt, ging hij naar het National Youth Theatre. \r\n\r\nHij studeerde twee jaar lang aan de Royal Academy of Dramatic Art. In 1966 ging hij naar het Birmingham Repertory Theatre, waar hij hoofdrollen speelde.', '#317f43', 'TimothyDalton.jpg'),
 (2, 'Roger Moore', 'Lijst van James Bond films met Roger Moore:\r\n\r\nLive and Let Die (1973)\r\nThe Man with the Golden Gun (1974)\r\nThe Spy Who Loved Me (1977)\r\nMoonraker (1979)\r\nFor Your Eyes Only (1981)\r\nOctopussy (1983)\r\nA View to a Kill (1985)', '', 'RogerMoore.jpg'),
 (3, 'George Clooney', 'George Timothy Clooney (Lexington, Kentucky, 6 mei 1961) is een Amerikaans acteur, regisseur, scenarioschrijver en producent met meer dan dertig filmprijzen en nominaties op zijn naam. Voor de film Syriana won hij een Oscar voor beste mannelijke bijrol. Tevens won hij als producent een Oscar voor beste film voor Argo. Ook kreeg hij Oscarnominaties voor zijn rollen in Michael Clayton en The Descendants, een European Film Award (voor Good Night, and Good Luck) en meerdere Golden Globes (voor Syriana en O Brother, Where Art Thou?).\r\nClooney is de zoon van televisiepersoonlijkheid Nick Clooney en Nina Bruce Warren. Hij heeft een oudere zus, Ada Zeidler. Zijn vader is de broer van zangeres-actrice Rosemary Clooney.\r\n\r\nOp jonge leeftijd leerde Clooney omgaan met de camera; zijn vader nam vaak zijn familie mee naar publieke optredens en de jonge Clooney verscheen zelfs in een van zijn televisieprogramma\'s. Op de Augusta High School was Clooney een begaafd honkballer, maar tijdens een tryout bij de Cincinnati Reds bleek hij niet goed genoeg om prof te worden.', NULL, 'GeorgeClooney.jpg');
 
@@ -92,7 +92,7 @@ CREATE TABLE `filmpersonages` (
 
 INSERT INTO `filmpersonages` (`id`, `naam`, `beschrijving`, `achtergrondkleur`, `afbeelding`) VALUES
 (1, 'Darth Vader', 'Darth Vader is een personage uit de Star Wars-films. Hij is als Sith-leerling ondergeschikt aan keizer Palpatine, ook bekend als Darth Sidious.\r\n\r\nIn de jaren 1977, 1980 en 1983 werd Darth Vader gespeeld door acteur David Prowse en stuntman Bob Anderson. Zijn stem werd echter ingesproken door James Earl Jones, omdat diens stem veel zwaarder, duisterder en dreigender klonk.', '#e0ab03', 'DarthVader.jpg'),
-(3, 'Luke Skywalker', 'Luke Skywalker is een personage uit de Star Warssaga, gespeeld door acteur Mark Hamill. Luke is de tweelingbroer van prinses Leia. Hun ouders zijn Padmé Amidala en Anakin Skywalker. Skywalker werd opgevoed door zijn oom Owen Lars en tante Beru Whitesun Lars.', '#317f43', 'LukeSkywalker.jpg');
+(2, 'Luke Skywalker', 'Luke Skywalker is een personage uit de Star Warssaga, gespeeld door acteur Mark Hamill. \r\n\r\nLuke is de tweelingbroer van prinses Leia. Hun ouders zijn Padmé Amidala en Anakin Skywalker. \r\n\r\nSkywalker werd opgevoed door zijn oom Owen Lars en tante Beru Whitesun Lars.', '#317f43', 'LukeSkywalker.jpg');
 
 -- --------------------------------------------------------
 
