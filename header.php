@@ -1,7 +1,7 @@
 <div class="header-wrapper">
     <div class="header-center">
             <a class="logo-link" href="<?php echo $base_url; ?>/index.php">
-                <h1>CodeCamp</h1>
+                <img src="<?php echo $base_url; ?>/img/logo-transparent-bg.png" alt="CodeCamp Logo">
             </a>
         <nav>
             <a class="nav-link" href="<?php echo $base_url; ?>/index.php">Home</a>
