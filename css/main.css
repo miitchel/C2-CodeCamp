@@ -79,6 +79,7 @@ p, pre {
     height: 100px;
     background-color: #4682b4;
     color: white;
+    box-shadow: 0 2px 15px 0px rgb(103 103 103 / 75%);
 }
 
 .header-center {
@@ -145,12 +146,12 @@ footer {
     bottom: 0;
     position: absolute;
     width: 100%;
+    box-shadow: 0 -2px 15px 0px rgb(103 103 103 / 75%);
 }
 
 .footer-wrapper {
     height: 150px;
     color: #fff;
-    background-color: #343a40;
     margin-top: 30px;
 }
 
