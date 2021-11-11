@@ -83,7 +83,7 @@ p, pre {
 }
 
 .header-center {
-    width: 70%;
+    width: 80%;
     height: 100%;
     margin: 0 auto;
     display: flex;
@@ -122,6 +122,7 @@ p, pre {
 
 .login, .logout {
     color: white;
+    font-size: 19px;
 }
 
 .input{

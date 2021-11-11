@@ -14,7 +14,8 @@
         </nav>
         <div class="login">
             <?php if(isset($_SESSION['user_id'])): ?>
-            <p>Hallo <?php echo $_SESSION['user_fullname'] ?> | <a class="logout" href="<?php echo $base_url; ?>/account/logout.php" >Uitloggen</a></p>
+            <p>Hallo <?php echo $_SESSION['user_fullname'] ?></p>
+            <a class="logout" href="<?php echo $base_url; ?>/account/logout.php" >Uitloggen</a>
             <?php else: ?>
             <p><a class="login" href="<?php echo $base_url; ?>/account/login.php" >Inloggen</a></p>
             <?php endif; ?>
