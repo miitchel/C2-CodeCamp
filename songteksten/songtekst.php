@@ -31,7 +31,6 @@ session_start();
     <div class="wrapper">
 
       <h1><?php echo $songtekst['artiest'] ?> - <?php echo $songtekst['titel'] ?></h1>
-      
       <div class="songtekst-body item">
         <pre <?php if(isset($songtekst['textkleur'])): echo "style='color: {$songtekst['textkleur']}'"; endif; ?>><?php
             if($songtekst['songtekst'] == "[Instrumental]"){
@@ -44,13 +43,3 @@ session_start();
         </pre>
       </div>
 
-    </div>
-  </main>
-  
-  <footer>
-    <?php require_once '../footer.php' ?>
-  </footer>
-
-</body>
-
-</html>

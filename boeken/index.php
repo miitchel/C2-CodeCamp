@@ -40,7 +40,7 @@ session_start();
                     <div class="boek-item">
                         <h2><?php echo $boek['titel'] ?></h2>
                         <p>Auteur: <strong><?php echo $boek['auteur'] ?></strong></p>
-                        <p>Aantal pagina's: <strong><?php echo $boek['paginas'] ?></strong></p>
+                        <p style="margin-bottom: 10px;">Aantal pagina's: <strong><?php echo $boek['paginas'] ?></strong></p>
                         <h4 style="font-size: 22px;">Boek beschrijving:</h4>
                         <p><?php if(isset($boek['beschrijving'])): echo $boek['beschrijving']; else: echo "<em>Nog niet beschikbaar</em>"; endif ?></p>
                         <p style="font-size: 25px">Prijs: <?php if(($boek['prijs']) == null): echo "<em>nog niet bekend</em>"; else: echo $boek['prijs']; endif ?> </p>
