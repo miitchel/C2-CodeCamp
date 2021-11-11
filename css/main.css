@@ -218,6 +218,8 @@ iframe{
 
 .item-img {
     width: 80%;
+    box-shadow: -5px -5px 10px 3px rgba(0,0,0,0.5);
+    border-radius: 20px;
 }
 
 .buttons-previous-next {
