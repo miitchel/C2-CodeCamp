@@ -339,7 +339,7 @@ iframe{
 /* Dranken Pagina */
 .drink-body {
     display: flex;
-    border: solid black 2px;
+    flex-direction: row;
     margin-bottom: 20px;
     padding: 20px;
 }

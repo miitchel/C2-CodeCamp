@@ -30,7 +30,7 @@ session_start();
 
         <a href="<?php echo $base_url; ?>/acteurs/acteurs.php?id=<?php echo $RogerMoore['id']; ?>"><?php echo $RogerMoore['naam']; ?></a>
 
-        <div class="drink-body">
+        <div class="drink-body items">
           <div class="img-container">
             <img class="dranken-img img-left" src="<?php echo $base_url ?>/img/dranken/cola.png" alt="Cola">
           </div>
@@ -38,7 +38,7 @@ session_start();
         </div>
 
         <h3>Seven Up</h3>
-        <div class="drink-body">
+        <div class="drink-body items">
           <p>7Up (of Seven-Up) is een frisdrankmerk van Dr Pepper Snapple Group in de Verenigde Staten en PepsiCo in de rest van de wereld.</p>
           <div class="img-container">
             <img class="dranken-img img-right" src="<?php echo $base_url ?>/img/dranken/7up.png" alt="Seven Up">
@@ -46,7 +46,7 @@ session_start();
         </div>
 
         <h3>Sinas</h3>
-        <div class="drink-body">
+        <div class="drink-body items">
           <div class="img-container">
             <img class="dranken-img img-left" src="<?php echo $base_url ?>/img/dranken/sinas.png" alt="Sinas">
           </div>
