@@ -39,7 +39,7 @@ session_start();
 
         <h3>Seven Up</h3>
         <div class="drink-body items">
-          <p>7Up (of Seven-Up) is een frisdrankmerk van Dr Pepper Snapple Group in de Verenigde Staten en PepsiCo in de rest van de wereld.</p>
+          <p>7Up (of Seven-Up) is een frisdrankmerk van Dr Pepper Snapple Group in de Verenigde Staten en PepsiCo in de rest van de wereld. Seven Up is een heldere frisdrank, hoofdzakelijk gemaakt uit koolzuurhoudend water, suiker en limoenextract. Het werd in 1929 geïntroduceerd als Bib-Label Lithiated Lemon-Lime Soda. Uiteraard was deze naam niet echt handig, en het publiek noemde het al snel 7 up.</p>
           <div class="img-container">
             <img class="dranken-img img-right" src="<?php echo $base_url ?>/img/dranken/7up.png" alt="Seven Up">
           </div>
