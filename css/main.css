@@ -237,6 +237,10 @@ iframe{
     text-align: center;
 }
 
+.time {
+    font-size: 40px;
+}
+
 .content-preview {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
