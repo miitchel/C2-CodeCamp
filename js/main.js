@@ -21,7 +21,7 @@ function getDateTime() {
     year: now.getFullYear(),
   };
   
-  clock.innerHTML = '<span>' + now.toTimeString().substring(0, 8) + '</span><span>' + Object.values( n ).join( ' ' ) + '</span>';
+  clock.innerHTML = '<span class="time">' + now.toTimeString().substring(0, 8) + '</span><span class="date">' + Object.values( n ).join( ' ' ) + '</span>';
 }
 
 getDateTime();
