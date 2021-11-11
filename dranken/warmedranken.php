@@ -30,7 +30,7 @@ session_start();
 
         <a href="<?php echo $base_url; ?>/acteurs/acteurs.php?id=<?php echo $GeorgeClooney['id']; ?>"><?php echo $GeorgeClooney['naam']; ?></a>
 
-        <div class="drink-body">
+        <div class="drink-body items">
           <div class="img-container">
             <img class="dranken-img img-left" src="<?php echo $base_url; ?>/img/dranken/koffie.jpg" alt="Koffie">
           </div>
@@ -38,7 +38,7 @@ session_start();
         </div>
 
         <h3>Latte</h3>
-        <div class="drink-body">
+        <div class="drink-body items">
           <p>Een caffè latte of latte is een in veel Europese en Amerikaanse gelegenheden geserveerde koffiedrank, gemaakt met espresso en warme melk. Vermoedelijk ligt de oorsprong in de Verenigde Staten, waar de drank uitgevonden zou zijn om de espresso uit de opkomende koffiemachines wat te verzachten. In Italie wordt de term niet of nauwelijks gebruikt. Wie latte bestelt, krijgt melk.</p>
           <div class="img-container">
             <img class="dranken-img img-right" src="<?php echo $base_url; ?>/img/dranken/latte.jpg" alt="Latte">
@@ -46,7 +46,7 @@ session_start();
         </div>
 
         <h3>Thee</h3>
-        <div class="drink-body">
+        <div class="drink-body items">
           <div class="img-container">
             <img class="dranken-img img-left" src="<?php echo $base_url; ?>/img/dranken/thee.jpg" alt="Thee">
           </div>

@@ -372,12 +372,12 @@ iframe{
     background-color: #dc0219;
 }
 
-.hot-drinks {
-    color: pink;
+.drinks a {
+    color:rgb(6, 64, 255);
 }
 
-.drinks a {
-    color:rgb(255, 155, 6);
+.drinks h3, h1{
+    color: white;
 }
 
 /* Boeken Pagina */
