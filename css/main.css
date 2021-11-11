@@ -289,14 +289,24 @@ iframe{
     font-size: 20px;
 }
 
-.items {
+.items, .item {
     display: flex;
     flex-direction: column;
     padding: 10px;
-    /* border: 1px solid black; */
     border-radius: 20px;
     background-color: #fff;
-    box-shadow: 3px 2px 15px -5px rgb(103 103 103 / 75%);}
+    box-shadow: 3px 2px 15px -5px rgb(103 103 103 / 75%);
+}
+
+.songtekst-body {
+    border: 1px solid black;
+    box-shadow: 5px 5px 10px 3px rgba(0,0,0,0.5);
+}
+
+.songtekst-body pre {
+    padding: 50px;
+}
+
 
 /* Gereedschap Pagina */
 .gereedschap-list {
