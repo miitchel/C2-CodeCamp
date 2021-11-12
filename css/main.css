@@ -80,6 +80,7 @@ p, pre {
     background-color: #4682b4;
     color: white;
     box-shadow: 0 2px 15px 0px rgb(103 103 103 / 75%);
+    margin-bottom: 20px;;
 }
 
 .header-center {
