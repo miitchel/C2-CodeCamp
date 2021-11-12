@@ -381,13 +381,13 @@ iframe{
     padding: 3px 7px;
     margin-top: 10px;
     margin-bottom: 15px;
-    transition: 0.2s;
 }
 
 .drinks a:hover {
     text-decoration: none;
     color: #4682b4;
     background-color: white;
+    transition: 0.2s;
 }
 
 .drinks h3{
