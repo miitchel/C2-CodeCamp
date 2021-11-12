@@ -28,6 +28,11 @@ if($action == "update"){
     $prijs = null;
   }
   
+    
+  if(empty($beschrijving)) {
+    $beschrijving = null;
+  }
+  
   if(isset($errors))
     {
         var_dump($errors);
